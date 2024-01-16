@@ -3,10 +3,8 @@
   // display: none;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 11;
-  background: #10101a;
-  //font-weight: bold;
+  background: $px-bg-1;
   .logo-text{
     font-weight: bold;
     color: #fff;
@@ -20,12 +18,7 @@
   width: 40px;
   height: 40px;
   position: relative;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  margin-left: 15px;
-  background: #2fbf71;
-  border: none;
+  background: $px-theme;
   margin-left: auto;
   span {
     position: absolute;
@@ -37,7 +30,7 @@
     height: 2px;
     margin: auto;
     box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
-    background: #fff;
-    color: #fff;
+    background: $px-white;
+    color: $px-white;
   }
 }

@@ -7628,7 +7628,6 @@ fieldset:disabled .btn {
   padding: 15px;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 11;
   background: #10101a;
 }
@@ -7645,12 +7644,7 @@ fieldset:disabled .btn {
   width: 40px;
   height: 40px;
   position: relative;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  margin-left: 15px;
   background: #2fbf71;
-  border: none;
   margin-left: auto;
 }
 
@@ -7670,6 +7664,7 @@ fieldset:disabled .btn {
 
 body {
   font-family: Montserrat, sans-serif;
+  background: #10101a;
   font-weight: 400;
   font-size: 16px;
   color: #fff;
