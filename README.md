@@ -1,2 +1,2 @@
-# portfolio_2024
-Html/SCSS/JS/GULP/Bootstrap/Swiper
+# gulp_base
+Base gulp project (include scss, autopref and more)
