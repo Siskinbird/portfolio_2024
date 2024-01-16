@@ -1,2 +1,17 @@
 @import 'fonts';
-@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+@import './variables.scss';
+@import './button.scss';
+// @import './color.scss';
+// @import './mixin.scss';
+// @import './navbar.scss';
+@import './mob-header.scss';
+// @import './base.scss';
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: $px-white;
+}
+

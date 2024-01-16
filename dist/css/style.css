@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;
+
+0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -7585,6 +7589,92 @@ fieldset:disabled .btn {
   z-index: 3 !important;
 }
 
+.px-btn {
+  padding: 0 25px;
+  line-height: 42px;
+  position: relative;
+  display: inline-block;
+  background: none;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none !important;
+  transition: ease all 0.35s;
+}
+
+.px-btn.px-btn-theme {
+  background: #2fbf71;
+  color: #fff;
+  box-shadow: 4px 4px #fff;
+}
+
+.theme-light .px-btn.px-btn-theme {
+  box-shadow: 4px 4px #0b0b13;
+}
+
+.px-btn.px-btn-theme:hover {
+  background: #fff;
+  color: #2fbf71;
+  box-shadow: 4px 4px #2fbf71;
+}
+
+.theme-light .px-btn.px-btn-theme:hover {
+  background: #0b0b13;
+  color: #fff;
+}
+
+.mob-header {
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  background: #10101a;
+}
+
+.mob-header .logo-text {
+  font-weight: bold;
+  color: #fff;
+  font-size: 25px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.toggler-menu {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  margin-left: 15px;
+  background: #2fbf71;
+  border: none;
+  margin-left: auto;
+}
+
+.toggler-menu span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 25px;
+  height: 2px;
+  margin: auto;
+  box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
+  background: #fff;
+  color: #fff;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -13736,6 +13826,10 @@ fieldset:disabled .btn {
   }
 
   .icon-link > .bi {
+    transition: none;
+  }
+
+  .px-btn {
     transition: none;
   }
 }
