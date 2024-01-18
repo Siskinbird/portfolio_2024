@@ -1,3 +1,5 @@
+@import 'variables';
+
 .px-btn{
 	padding: 0 25px;
 	line-height: 42px;
@@ -12,18 +14,18 @@
 	@include transition(ease all 0.35s); 
 	&.px-btn-theme {
 		background: $px-theme;
-		color: $px-white;
-		box-shadow: 4px 4px $px-white;
+		color: $white;
+		box-shadow: 4px 4px $white;
 		.theme-light & {
-			box-shadow: 4px 4px $px-dark;
+			box-shadow: 4px 4px $dark;
 		}
 		&:hover {
-			background: $px-white;
+			background: $white;
 			color: $px-theme;
 			box-shadow: 4px 4px $px-theme;
 			.theme-light & {
 				background: $px-dark;
-				color: $px-white;
+				color: $white;
 			}
 		}
 	}

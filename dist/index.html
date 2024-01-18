@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240118114607">
+  <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240118155103">
   <title>D.Chizhov</title>
 </head>
 <body>
@@ -21,8 +22,46 @@
 </button>
   </div>
 </header>
-  
 
-  <script src="js/app.min.js?_v=20240118114607"></script>
+  <main class="main">
+<section id="home" data-nav-tooltip="Home" class="section">
+    <div class="home-banner">
+        <div class="container">
+            <div class="row full-screen align-items-center">
+                <div class="col-lg-6">
+                    <div class="type-box">
+                        <h6>Привет, меня зовут</h6>
+                        <h1 class="font-alt">Чижов Дмитрий</h1>
+                        <p class="lead">Я крайне ответственный:
+                            <span id="type-it"></span>
+                            <span class="typed-cursor">|</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+  <footer>
+
+</footer>
+
+  <script src="js/app.min.js?_v=20240118155103"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js?_v=20240118155103"></script>
+  <script>
+    let typed = new Typed("#type-it", {
+      strings: ["Frontend разработчик.", "Верстальщик", "Молодой человек"],
+      typeSpeed: 75,
+      backSpeed: 50,
+      backDelay: 800,
+      startDelay: 500,
+      loop: true,
+      showCursor: false,
+      cursorChar: "|",
+      attr: null,
+    });
+  </script>
 </body>
 </html>

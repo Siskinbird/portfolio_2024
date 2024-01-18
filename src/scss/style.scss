@@ -7,6 +7,7 @@
 // @import './navbar.scss';
 @import './mob-header.scss';
 @import './menu-mobile.scss';
+@import './home.scss';
 // @import './base.scss';
 
 body {
@@ -14,6 +15,6 @@ body {
   background: $px-bg-1;
   font-weight: 400;
   font-size: 16px;
-  color: $px-white;
+  color: $white;
 }
 
