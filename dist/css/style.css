@@ -4,6 +4,10 @@
 
 0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -7626,7 +7630,7 @@ fieldset:disabled .btn {
 
 .mob-header {
   padding: 15px;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 11;
   background: #10101a;
@@ -7640,7 +7644,7 @@ fieldset:disabled .btn {
   text-decoration: none;
 }
 
-.toggler-menu {
+.toggle-menu {
   width: 40px;
   height: 40px;
   position: relative;
@@ -7648,7 +7652,7 @@ fieldset:disabled .btn {
   margin-left: auto;
 }
 
-.toggler-menu span {
+.toggle-menu span {
   position: absolute;
   top: 0;
   left: 0;
