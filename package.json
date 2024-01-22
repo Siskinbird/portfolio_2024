@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
-    "dev" : "gulp",
+    "dev": "gulp",
     "sprive": "gulp svgSprive",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -51,6 +51,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "bootstrap": "^5.3.2"
+    "bootstrap": "^5.3.2",
+    "typed.js": "^2.1.0"
   }
 }
