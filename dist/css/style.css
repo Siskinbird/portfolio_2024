@@ -7650,6 +7650,32 @@ fieldset:disabled .btn {
   text-decoration: none;
 }
 
+.header-left {
+  width: 250px;
+  position: fixed;
+  display: none;
+  bottom: 0;
+  top: 0;
+  background: #0c0c14;
+}
+
+.header-left .scroll-bar {
+  height: calc(100% - 50px);
+}
+
+.header-left .hl-top {
+  text-align: center;
+  position: relative;
+  padding: 65px 25px 25px;
+}
+
+.header-left .hl-top img {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #10101a;
+  border-radius: 50%;
+}
+
 .toggle-menu {
   width: 40px;
   height: 40px;
@@ -12218,6 +12244,15 @@ body {
 
   .fs-4 {
     font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1201px) {
+  .main {
+    left: 250px;
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 250px);
   }
 }
 
