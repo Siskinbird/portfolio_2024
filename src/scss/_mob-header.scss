@@ -2,14 +2,16 @@
 
 .mob-header {
   padding: 15px;
-  // display: none;
-  position: sticky;
+  //display: block;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 11;
   background: $px-bg-1;
   .logo-text{
     font-weight: bold;
-    color: #fff;
+    text-shadow: 2px 2px 0 #ec0569;
+    color: $white;
     font-size: 25px;
     line-height: 1;
     text-decoration: none;

@@ -7634,7 +7634,8 @@ fieldset:disabled .btn {
 
 .mob-header {
   padding: 15px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 11;
   background: #10101a;
@@ -7642,6 +7643,7 @@ fieldset:disabled .btn {
 
 .mob-header .logo-text {
   font-weight: bold;
+  text-shadow: 2px 2px 0 #ec0569;
   color: #fff;
   font-size: 25px;
   line-height: 1;
@@ -7686,6 +7688,16 @@ fieldset:disabled .btn {
   padding-bottom: 40px;
 }
 
+.home-banner .type-box .lead {
+  font-size: 16px;
+  height: 52px;
+  font-weight: 500;
+}
+
+.home-banner .type-box .description {
+  font-weight: 500;
+}
+
 .home-banner .typed-cursor {
   content: "|";
   animation: blink 1s infinite;
@@ -7693,6 +7705,7 @@ fieldset:disabled .btn {
 
 .home-banner .font-alt {
   font-family: "Rubik", serif;
+  text-shadow: 2px 2px 0 #ec0569;
 }
 
 .home-banner .font-alt h1,
@@ -7701,6 +7714,18 @@ fieldset:disabled .btn {
   font-weight: 700 !important;
   line-height: 1;
   margin: 0 0 20px;
+}
+
+.home-banner::after {
+  content: "";
+  position: absolute;
+  right: -20vh;
+  top: -20vh;
+  width: 100vh;
+  height: 100vh;
+  border-radius: 50%;
+  background: #0b0b13;
+  z-index: -1;
 }
 
 @keyframes blink {
