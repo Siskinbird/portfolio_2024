@@ -7613,7 +7613,7 @@ fieldset:disabled .btn {
   background: none;
   border: 1px solid transparent;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 2px;
   text-decoration: none !important;
   transition: ease all 0.35s;
@@ -7626,7 +7626,7 @@ fieldset:disabled .btn {
 }
 
 .theme-light .px-btn.px-btn-theme {
-  box-shadow: 4px 4px #212529;
+  box-shadow: 4px 4px #0b0b13;
 }
 
 .px-btn.px-btn-theme:hover {
@@ -13964,10 +13964,6 @@ body {
   }
 
   .icon-link > .bi {
-    transition: none;
-  }
-
-  .px-btn {
     transition: none;
   }
 }
