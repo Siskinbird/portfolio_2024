@@ -1,19 +1,49 @@
 @import 'variables';
+@import "media_mixin";
 
 .mob-header {
   padding: 15px;
-  //display: block;
+  display: none;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
   z-index: 11;
   background: $px-bg-1;
+  .theme-light & {
+    background: $white;
+  }
+  .navbar-brand {
+    padding: 0;
+  }
   .logo-text{
-    font-weight: bold;
-    text-shadow: 2px 2px 0 #ec0569;
-    color: $white;
-    font-size: 25px;
-    line-height: 1;
-    text-decoration: none;
+        font-weight: bold;
+        text-shadow: 2px 2px 0 #ec0569;
+        color: $white;
+        font-size: 25px;
+        line-height: 1;
+        text-decoration: none;
+  }
+  @include down-lg {
+      display: block;
   }
 }
+
+//
+//.mob-header {
+//  padding: 15px;
+//  display: none;
+//  position: fixed;
+//  width: 100%;
+//  top: 0;
+//  z-index: 11;
+//  background: $px-bg-1;
+//  .logo-text{
+//    font-weight: bold;
+//    text-shadow: 2px 2px 0 #ec0569;
+//    color: $white;
+//    font-size: 25px;
+//    line-height: 1;
+//    text-decoration: none;
+//  }
+
+//}

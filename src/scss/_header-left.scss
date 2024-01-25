@@ -1,7 +1,8 @@
+@import "media_mixin";
+
 .header-left {
   width: 250px;
   position: fixed;
-  display: none;
   bottom: 0;
   top: 0;
   background: #0c0c14;
@@ -18,5 +19,10 @@
       border: 3px solid #10101a;
       border-radius: 50%;
     }
+  }
+  @include _1200{
+    transition: ease all 0.35s;
+    left: -300px;
+    z-index: 222;
   }
 }
