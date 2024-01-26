@@ -5,11 +5,11 @@
   height: 40px;
   position: relative;
   background: $px-theme;
+  border: 0;
   margin-left: auto;
   box-shadow: 2px 2px 2px $text-shadow;
   span {
     position: absolute;
-
     top: 0;
     left: 0;
     bottom: 0;

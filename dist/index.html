@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240125133731">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240126152938">
   <title>D.Chizhov</title>
 </head>
 <body>
@@ -15,14 +15,14 @@
       <a class="logo-text" href="/">DmiCh</a>
     </div>
     <!-- Burger menu mobile -->
-<button class="toggle-menu ">
-  <span style="text-shadow: 1px 1px 2px #EC0569FF"></span>
+<button onclick="menuToggle" id="toggle-menu" class="toggle-menu">
+  <span></span>
   <span></span>
   <span></span>
 </button>
   </div>
 </div>
-  <header class="header-left">
+  <header id="header-left" class="header-left">
     <div class="scroll-bar">
         <div class="hl-top">
             <div class="hl-logo">
@@ -30,6 +30,14 @@
                     <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt="Dmitry Chizhov"></picture>
                 </div>
             </div>
+            <ul class="nav nav-menu">
+    <li><span>Главная</span></li>
+    <li><span>Обо мне</span></li>
+    <li><span>Услуги</span></li>
+    <li><span>Портфолио</span></li>
+    <li><span>Блог</span></li>
+    <li><span>Контакты</span></li>
+</ul>
         </div>
     </div>
     <div class="nav justify-content-center social-icons"></div>
@@ -70,6 +78,6 @@
 
 </footer>
 
-  <script src="js/app.min.js?_v=20240125133731"></script>
+  <script src="js/app.min.js?_v=20240126152938"></script>
 </body>
 </html>

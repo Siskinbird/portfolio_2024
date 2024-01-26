@@ -14,3 +14,16 @@ export const isWebp = () => {
   });
 }
 
+export const menuToggle = () => {
+  let sidebar = document.getElementById('header-left');
+  let toggler = document.getElementById('toggle-menu');
+  toggler.addEventListener('click', () => {
+    if (!toggler.classList.contains('open')) {
+      toggler.classList.add('open');
+      sidebar.style.left = 0;
+    } else {
+      toggler.classList.remove('open');
+      sidebar.style.left = '-300px';
+    }
+  })
+}
