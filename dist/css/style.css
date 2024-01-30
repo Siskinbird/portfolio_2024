@@ -7734,6 +7734,11 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+.toggle-menu button:active,
+.toggle-menu button:focus {
+  border: none;
+}
+
 .main img {
   max-width: 100%;
   border-radius: 16px;
@@ -7830,7 +7835,9 @@ fieldset:disabled .btn {
   text-transform: uppercase;
 }
 
-.nav-menu li span {
+.nav-menu li a {
+  text-decoration: none;
+  color: #fff;
   margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
@@ -12316,6 +12323,12 @@ body {
 }
 
 @media (min-width: 1201px) {
+  .header-left {
+    transition: ease all 0.35s;
+    left: 0;
+    z-index: 222;
+  }
+
   .main {
     left: 250px;
     position: absolute;
@@ -13513,9 +13526,7 @@ body {
   }
 
   .header-left {
-    transition: ease all 0.35s;
     left: -300px;
-    z-index: 222;
   }
 }
 
@@ -13900,6 +13911,12 @@ body {
 @media (max-width: 575.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-sm {
     transition: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    width: 950px;
   }
 }
 

@@ -13,7 +13,9 @@
     width: 100%;
     text-align: left;
     text-transform: uppercase;
-    span {
+    a {
+      text-decoration: none;
+      color: $white;
       margin-top: 8px;
       margin-bottom: 8px;
       font-weight: 500;

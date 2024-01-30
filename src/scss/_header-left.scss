@@ -36,9 +36,12 @@
       box-shadow:  2px 1px 4px $text-shadow;
     }
   }
-  @include _1200{
+  @include _1201{
     transition: ease all 0.35s;
-    left: -300px;
+    left: 0;
     z-index: 222;
+  }
+  @include _1200 {
+    left:  -300px;
   }
 }
