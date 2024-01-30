@@ -7675,6 +7675,7 @@ fieldset:disabled .btn {
   bottom: 0;
   top: 0;
   background: #0c0c14;
+  transition: 0.3s ease-in-out;
 }
 
 .header-left .scroll-bar {
@@ -7817,29 +7818,23 @@ fieldset:disabled .btn {
 }
 
 .nav {
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
 
-.nav-menu {
-  padding-top: 45px;
-  padding-bottom: 45px;
+.nav-menu li {
+  transition: 0.3s ease-in-out;
+  padding: 12px 8px;
 }
 
-.nav-menu li {
-  width: 100%;
-  text-align: left;
-  text-transform: uppercase;
+.nav-menu li:hover {
+  text-shadow: 2px 1px 1px #ec0569;
 }
 
 .nav-menu li a {
   text-decoration: none;
   color: #fff;
-  margin-top: 8px;
-  margin-bottom: 8px;
   font-weight: 500;
 }
 
@@ -13527,6 +13522,7 @@ body {
 
   .header-left {
     left: -300px;
+    z-index: 22;
   }
 }
 

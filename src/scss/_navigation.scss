@@ -1,25 +1,22 @@
 .nav {
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
 
 .nav-menu {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  //padding-top: 45px;
+  //padding-bottom: 45px;
   li {
-    width: 100%;
-    text-align: left;
-    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    padding: 12px 8px;
+    &:hover {
+      text-shadow: 2px 1px 1px $text-shadow;
+    }
     a {
       text-decoration: none;
       color: $white;
-      margin-top: 8px;
-      margin-bottom: 8px;
       font-weight: 500;
-      //text-shadow: 2px 2px 0 $text-shadow;
     }
   }
 }

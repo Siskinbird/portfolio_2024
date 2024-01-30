@@ -7,6 +7,7 @@
   bottom: 0;
   top: 0;
   background: #0c0c14;
+  transition: .3s ease-in-out;
   .scroll-bar {
     height: calc(100% - 50px);
   }
@@ -43,5 +44,6 @@
   }
   @include _1200 {
     left:  -300px;
+    z-index: 22;
   }
 }
