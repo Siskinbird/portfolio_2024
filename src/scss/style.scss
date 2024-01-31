@@ -11,6 +11,7 @@
 @import './main.scss';
 @import './home.scss';
 @import './navigation.scss';
+@import './about.scss';
 // @import './base.scss';
 
 body {
@@ -19,5 +20,15 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: $white;
+}
+
+.section {
+  padding: 100px 0;
+  @include down-sm {
+    padding-bottom: 60px;
+  }
+}
+.pp-scrollable {
+  overflow: auto;
 }
 

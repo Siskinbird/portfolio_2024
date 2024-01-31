@@ -7740,7 +7740,7 @@ fieldset:disabled .btn {
   border: none;
 }
 
-.main img {
+.main .main-img img {
   max-width: 100%;
   border-radius: 16px;
   transition: 0.8s ease-in-out;
@@ -7771,7 +7771,7 @@ fieldset:disabled .btn {
 }
 
 .home-banner .type-box .description {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .home-banner .typed-cursor {
@@ -7790,6 +7790,7 @@ fieldset:disabled .btn {
   font-weight: 700 !important;
   line-height: 1;
   margin: 0 0 20px;
+  font-size: 2.1rem;
 }
 
 .home-banner::after {
@@ -7839,12 +7840,77 @@ fieldset:disabled .btn {
   font-weight: 500;
 }
 
+.title h3,
+.title .h3 {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title h3:before,
+.title .h3:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  width: 60px;
+  background: #2fbf71;
+  height: 1px;
+}
+
+.title h3:after,
+.title .h3:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -7px;
+  left: 56px;
+  right: 0;
+  z-index: -1;
+  background: #2fbf71;
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media span {
+  font-size: 50px;
+  line-height: 1;
+  color: #fff;
+  font-weight: 600;
+  min-width: 55px;
+}
+
+.media .media-body {
+  flex: 1;
+  line-height: 1.4rem;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   background: #10101a;
   font-weight: 400;
   font-size: 16px;
   color: #fff;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.pp-scrollable {
+  overflow: auto;
 }
 
 @media (min-width: 576px) {
@@ -11163,7 +11229,7 @@ body {
     text-align: center !important;
   }
 
-  .main img {
+  .main .main-img img {
     border-radius: 50%;
   }
 }
@@ -13816,6 +13882,12 @@ body {
 @media (max-width: 767.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-md {
     transition: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-bottom: 60px;
   }
 }
 

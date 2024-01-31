@@ -1,0 +1,48 @@
+.title h3 {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 60px;
+    background: $px-theme;
+    height: 1px;
+  }
+  &:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -7px;
+    left: 56px;
+    right: 0;
+    z-index: -1;
+    background: #2fbf71;
+  }
+}
+.media {
+  display: flex;
+  align-items: flex-start;
+  span {
+    font-size: 50px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 600;
+    min-width: 55px;
+  }
+  .media-body {
+    flex: 1;
+    line-height: 1.4rem;
+  }
+}
