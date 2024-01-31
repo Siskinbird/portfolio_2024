@@ -19,8 +19,8 @@
     padding-top: 40px;
     padding-bottom: 40px;
     .lead {
-      font-size: 16px;
-      height: 52px;
+      font-size: 1rem;
+      height: 34px;
       font-weight: 500;
     }
     .description {
@@ -54,6 +54,8 @@
     z-index: -1;
   }
 }
+
+
 
 @keyframes blink {
   0% {

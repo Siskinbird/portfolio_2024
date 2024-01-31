@@ -10,8 +10,12 @@
     img {
         max-width: 100%;
         border-radius: 16px;
+        transition: .8s ease-in-out;
         box-shadow: 3px 3px 2px #ec0569;
         border: 3px solid $px-theme;
+        @include  up-md {
+            border-radius: 50%;
+        }
     }
 }
 
