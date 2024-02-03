@@ -1,13 +1,15 @@
 .title h3 {
   margin: 0;
+  margin-top: 34px;
   position: relative;
   z-index: 1;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 30px;
   display: inline-block;
   vertical-align: top;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-shadow: 2px 2px 0 $text-shadow;
   &:before {
     content: "";
     position: absolute;
@@ -38,11 +40,19 @@
     font-size: 50px;
     line-height: 1;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
     min-width: 55px;
+    text-shadow: 2px 2px 0 $text-shadow;
   }
   .media-body {
     flex: 1;
     line-height: 1.4rem;
   }
+}
+.btn-bar {
+  padding-top: 35px;
+}
+
+.px-btn + .px-btn {
+    margin-left: 22px;
 }

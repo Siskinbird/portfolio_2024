@@ -3,7 +3,7 @@
 @import './variables.scss';
 @import './button.scss';
 // @import './color.scss';
-// @import './mixin.scss';
+@import './media_mixin';
 // @import './navbar.scss';
 @import './mob-header.scss';
 @import './header-left.scss';
@@ -32,3 +32,24 @@ body {
   overflow: auto;
 }
 
+.separator {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1px;
+    background: #fff;
+    opacity: 0.1;
+  }
+  @include down-sm {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
