@@ -24,6 +24,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -7768,8 +7770,8 @@ fieldset:disabled .btn {
 
 .home-banner .type-box .lead {
   font-size: 1rem;
-  height: 34px;
   font-weight: 500;
+  height: 34px;
 }
 
 .home-banner .type-box .description {
@@ -7908,6 +7910,38 @@ fieldset:disabled .btn {
 
 .px-btn + .px-btn {
   margin-left: 22px;
+}
+
+.education-box {
+  background: #0b0b13;
+  list-style: none;
+}
+
+.education-box li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.education-box span {
+  background: #2fbf71;
+  font-weight: 500;
+  color: #fff;
+  font-size: 11px;
+  padding: 1px 8px;
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 1px;
+  margin-left: -24px;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.education-box span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border-top: 5px solid #165934;
+  border-left: 5px solid transparent;
 }
 
 body {
@@ -10169,6 +10203,10 @@ body {
 
   .text-md-center {
     text-align: center !important;
+  }
+
+  .education-box {
+    margin-bottom: 10px;
   }
 }
 

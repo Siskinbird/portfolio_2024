@@ -1,0 +1,34 @@
+@import "variables";
+
+.education-box {
+    background: $px-dark;
+  list-style: none;
+    @include up-sm {
+      margin-bottom: 10px;
+    }
+  li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  span {
+    background: $px-theme;
+    font-weight: 500;
+    color: $white;
+    font-size: 11px;
+    padding: 1px 8px;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 1px;
+    margin-left: -24px;
+    position: relative;
+    margin-bottom: 9px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      border-top: 5px solid #165934;
+      border-left: 5px solid transparent;
+    }
+
+  }
+}
