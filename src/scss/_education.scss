@@ -29,6 +29,44 @@
       border-top: 5px solid #165934;
       border-left: 5px solid transparent;
     }
-
   }
+}
+.skill-lt{
+  position: relative;
+  //background: rgba(255, 255, 255, 0.2);
+  //width: 80px;
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
+  h6 {
+    font-size: 14px;
+    margin: 0 0 10px;
+    font-weight: 500;
+    color: #fff;
+  }
+  span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #2fbf71;
+    position: absolute;
+    right: -1px;
+    top: -5px;
+  }
+}
+
+.skill-bar {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.skill-lt .skill-bar .skill-bar-in {
+  width: 80px;
+  position: relative;
+  -moz-transition: ease all 0.55s;
+  -o-transition: ease all 0.55s;
+  -webkit-transition: ease all 0.55s;
+  transition: ease all 0.55s;
+  height: 5px;
+  background: #2fbf71;
 }
