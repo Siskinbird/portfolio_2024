@@ -1,5 +1,7 @@
 @import "variables";
-
+span h6 {
+  color: $white;
+}
 .education-box {
     background: $px-dark;
   list-style: none;
@@ -12,7 +14,6 @@
   span {
     background: $px-theme;
     font-weight: 500;
-    color: $white;
     font-size: 11px;
     padding: 1px 8px;
     display: inline-block;
@@ -42,7 +43,6 @@
     font-size: 14px;
     margin: 0 0 10px;
     font-weight: 500;
-    color: #fff;
   }
   span {
     width: 14px;

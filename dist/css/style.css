@@ -7752,6 +7752,11 @@ fieldset:disabled .btn {
   border: 3px solid #2fbf71;
 }
 
+h5,
+.h5 {
+  color: #fff;
+}
+
 .home-banner {
   overflow: hidden;
   position: relative;
@@ -7772,6 +7777,7 @@ fieldset:disabled .btn {
   font-size: 1rem;
   font-weight: 500;
   height: 34px;
+  color: #fff;
 }
 
 .home-banner .type-box .description {
@@ -7786,11 +7792,11 @@ fieldset:disabled .btn {
 .home-banner .font-alt {
   font-family: "Rubik", serif;
   text-shadow: 2px 2px 0 #ec0569;
+  color: #fff;
 }
 
 .home-banner .font-alt h1,
 .home-banner .font-alt .h1 {
-  color: #fff;
   font-weight: 700 !important;
   line-height: 1;
   margin: 0 0 20px;
@@ -7844,10 +7850,14 @@ fieldset:disabled .btn {
   font-weight: 500;
 }
 
+h3,
+.h3 {
+  color: #fff;
+}
+
 .title h3,
 .title .h3 {
-  margin: 0;
-  margin-top: 34px;
+  margin: 34px 0 0;
   position: relative;
   z-index: 1;
   font-weight: 600;
@@ -7912,6 +7922,11 @@ fieldset:disabled .btn {
   margin-left: 22px;
 }
 
+span h6,
+span .h6 {
+  color: #fff;
+}
+
 .education-box {
   background: #0b0b13;
   list-style: none;
@@ -7924,7 +7939,6 @@ fieldset:disabled .btn {
 .education-box span {
   background: #2fbf71;
   font-weight: 500;
-  color: #fff;
   font-size: 11px;
   padding: 1px 8px;
   display: inline-block;
@@ -7957,7 +7971,6 @@ fieldset:disabled .btn {
   font-size: 14px;
   margin: 0 0 10px;
   font-weight: 500;
-  color: #fff;
 }
 
 .skill-lt span {
@@ -7983,16 +7996,64 @@ fieldset:disabled .btn {
   background: #2fbf71;
 }
 
+.resume-row {
+  padding: 35px;
+}
+
+.resume-row p {
+  max-width: 80%;
+}
+
+.resume-row h6,
+.resume-row .h6 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.resume-row .rb-left {
+  min-height: 100%;
+  text-align: center;
+}
+
+.resume-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.resume-row .rb-time {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #2fbf71;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rb-left img {
+  width: 100px;
+  height: 100px;
+}
+
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: "Rubik", monospac, sans-serif;
+  color: rgba(255, 255, 255, 0.8);
   background: #10101a;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
-  color: #fff;
+  line-height: 1.7;
 }
 
 .section {
   padding: 100px 0;
+}
+
+label {
+  font-size: 12px;
 }
 
 .pp-scrollable {
@@ -8016,6 +8077,11 @@ body {
   height: 1px;
   background: #fff;
   opacity: 0.1;
+}
+
+h6,
+.h6 {
+  color: #fff !important;
 }
 
 @media (min-width: 576px) {
@@ -13898,6 +13964,23 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  .resume-row p {
+    max-width: 100%;
+  }
+
+  .resume-row {
+    padding: 20px;
+  }
+
+  .resume-row .rb-time {
+    position: relative;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    vertical-align: top;
+  }
+}
+
 @media (max-width: 767.98px) {
   .table-responsive-md {
     overflow-x: auto;
@@ -13995,6 +14078,11 @@ body {
 }
 
 @media (max-width: 767px) {
+  .resume-row .rb-left {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
   .section {
     padding-bottom: 60px;
   }

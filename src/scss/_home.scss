@@ -7,24 +7,31 @@
     width: 950px;
   }
 }
+h5 {
+  color: $white;
+}
+
 .home-banner {
   overflow: hidden;
   position: relative;
+
   .full-screen {
     min-height: 100vh;
-
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
   .type-box {
     padding-top: 40px;
     padding-bottom: 40px;
+
     .lead {
       font-size: 1rem;
       font-weight: 500;
-
       height: 34px;
+      color: $white;
     }
+
     .description {
       font-weight: 400;
     }
@@ -37,8 +44,8 @@
   .font-alt {
     font-family: $font-alt;
     text-shadow: 2px 2px 0 $text-shadow;
+    color: $white;
     h1 {
-      color: $white;
       font-weight: 700 !important;
       line-height: 1;
       margin: 0 0 20px;

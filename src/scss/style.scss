@@ -13,14 +13,18 @@
 @import './navigation.scss';
 @import './about.scss';
 @import './education.scss';
+@import './experience.scss';
 // @import './base.scss';
 
 body {
-  font-family: Montserrat, sans-serif;
+  //font-family: Montserrat, sans-serif;
+  font-family: "Rubik", monospac, sans-serif;
+  color: rgba(255, 255, 255, 0.8);
   background: $px-bg-1;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
-  color: $white;
+  line-height: 1.7;
+  //color: $white;
 }
 
 .section {
@@ -28,6 +32,9 @@ body {
   @include down-sm {
     padding-bottom: 60px;
   }
+}
+label {
+  font-size: 12px;
 }
 .pp-scrollable {
   overflow: auto;
@@ -53,4 +60,7 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
+h6 {
+  color: $white !important;
 }
