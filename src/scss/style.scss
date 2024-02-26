@@ -14,6 +14,7 @@
 @import './about.scss';
 @import './education.scss';
 @import './experience.scss';
+@import './services.scss';
 // @import './base.scss';
 
 body {
@@ -61,4 +62,7 @@ body {
 }
 h6 {
   color: $white !important;
+}
+.pp-section {
+  background: $px-bg-1;
 }

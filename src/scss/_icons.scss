@@ -1,0 +1,90 @@
+// Иконки SVG
+%icon-standard {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all .3s ease-in-out;
+  &:hover {
+    background-color: #5AB159;
+  }
+}
+
+.v-icon {
+  &-telegram {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/Telegram.svg");
+    -webkit-mask-image: url("../img/socials/Telegram.svg");
+  }
+  &-git {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/Telegram.svg");
+    -webkit-mask-image: url("../img/socials/GitHub.svg");
+  }
+  &-youtube {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/Telegram.svg");
+    -webkit-mask-image: url("../img/socials/youtube.svg");
+  }
+  &-linkedin {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/Telegram.svg");
+    -webkit-mask-image: url("../img/socials/LinkedIn.svg");
+  }
+  &-instagram {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/Telegram.svg");
+    -webkit-mask-image: url("../img/socials/Instagram.svg");
+  }
+
+  //Navigation icons
+  &-about {
+    @extend %icon-standard;
+    mask-image: url("../img/sidebar/about.svg");
+    -webkit-mask-image: url("../img/sidebar/about.svg");
+  }
+  &-contacts {
+    @extend %icon-standard;
+    mask-image: url("../img/sidebar/contacts.svg");
+    -webkit-mask-image: url("../img/sidebar/contacts.svg");
+  }
+  &-home {
+    @extend %icon-standard;
+    mask-image: url("../img/sidebar/home.svg");
+    -webkit-mask-image: url("../img/sidebar/home.svg");
+  }
+  &-portfolio {
+    @extend %icon-standard;
+    mask-image: url("../img/sidebar/portfolio.svg");
+    -webkit-mask-image: url("../img/sidebar/portfolio.svg");
+  }
+  &-services {
+    @extend %icon-standard;
+    mask-image: url("../img/sidebar/services.svg");
+    -webkit-mask-image: url("../img/sidebar/services.svg");
+  }
+  &-hosting {
+    @extend %icon-standard;
+    mask-image: url("../img/services/host.svg");
+    -webkit-mask-image: url("../img/services/host.svg");
+  }
+  &-seo {
+    @extend %icon-standard;
+    mask-image: url("../img/services/seo.svg");
+    -webkit-mask-image: url("../img/services/seo.svg");
+  }
+  &-web {
+    @extend %icon-standard;
+    mask-image: url("../img/services/webdew.svg");
+    -webkit-mask-image: url("../img/services/webdew.svg");
+  }
+
+}

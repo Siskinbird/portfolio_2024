@@ -8044,6 +8044,26 @@ span .h6 {
   right: 0;
 }
 
+.feature-box-01 {
+  overflow: hidden;
+  z-index: 1;
+  background: #0b0b13;
+  transition: ease background 0.35s;
+}
+
+.feature-box-01 .future-content {
+  padding-left: 2rem;
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media-body {
+  flex: 1;
+}
+
 body {
   font-family: "Rubik", monospac, sans-serif;
   color: rgba(255, 255, 255, 0.8);
@@ -8083,6 +8103,10 @@ body {
 h6,
 .h6 {
   color: #fff !important;
+}
+
+.pp-section {
+  background: #10101a;
 }
 
 @media (min-width: 576px) {
@@ -13770,6 +13794,10 @@ h6,
   .header-left {
     left: -300px;
     z-index: 22;
+  }
+
+  .feature-box-01 .future-content {
+    padding-left: 1px;
   }
 }
 

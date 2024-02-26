@@ -1,0 +1,21 @@
+.feature-box-01 {
+  overflow: hidden;
+  z-index: 1;
+  background: $px-dark;
+  transition: ease background 0.35s;
+}
+
+.feature-box-01 .future-content {
+  padding-left: 2rem;
+  @include down-lg {
+    padding-left: 1px;
+  }
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+.media-body {
+  flex: 1;
+}
