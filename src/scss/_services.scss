@@ -12,10 +12,20 @@
   }
 }
 
-.media {
-  display: flex;
-  align-items: flex-start;
-}
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    span {
+      line-height: 60px;
+      font-size: 54px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
 .media-body {
   flex: 1;
+  padding-left: 15px;
 }
+
