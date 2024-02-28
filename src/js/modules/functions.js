@@ -1,3 +1,5 @@
+import Swiper from "swiper";
+
 export const isWebp = () => {
   function testWebP(callback) {
 

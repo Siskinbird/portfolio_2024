@@ -10055,6 +10055,77 @@ you can use the generic selector below, but it's slower:
   font-size: 2em;
 }
 
+.swiper {
+  margin-top: 45px;
+}
+
+.swiper-slide {
+  padding: 35px;
+  background: #333342;
+  max-width: 50%;
+  margin: 15px 25px 25px 0;
+}
+
+.slide-image {
+  width: 100px;
+  height: 100px;
+}
+
+.slide-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide-description {
+  flex: 1;
+  padding-left: 25px;
+}
+
+.slide-description p {
+  opacity: 0.75;
+  letter-spacing: -1px;
+}
+
+.slide-description h6,
+.slide-description .h6 {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  transition: ease all 0.55s;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.theme-light .swiper-pagination-bullet {
+  border-color: #333342;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+.theme-light .swiper-pagination-bullet-active {
+  background: #333342;
+}
+
 body {
   font-family: "Rubik", monospac, sans-serif;
   color: rgba(255, 255, 255, 0.8);
@@ -16000,6 +16071,13 @@ h6,
 
   .rb-left img {
     max-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    max-width: 100%;
+    padding: 20px;
   }
 }
 

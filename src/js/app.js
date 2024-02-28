@@ -1,9 +1,10 @@
 import * as myFunctions from './modules/functions.js';
 
 myFunctions.isWebp();
-myFunctions.menuToggle()
+myFunctions.menuToggle();
 
-// import Swiper, {Navigation, Pagination} from 'swiper';
+
+import Swiper from 'swiper';
 import Typed from 'typed.js';
 
 const typed = new Typed("#type-it", {
@@ -18,7 +19,25 @@ const typed = new Typed("#type-it", {
     attr: null,
 });
 
-// const swiper = new Swiper();
+
+/*************Swiper.js**************/
+
+export const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    allowTouchMove: true,
+    autoplay: {
+        delay: 5000,
+    },
+    slidesPerView: 'auto',
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+        direction: 'horizontal',
+    }
+});
 
 
 
