@@ -1,4 +1,7 @@
+import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import Swiper from "swiper";
+Swiper.use([Autoplay, Navigation, Pagination]);
+
 
 export const isWebp = () => {
   function testWebP(callback) {
@@ -29,3 +32,37 @@ export const menuToggle = () => {
     }
   })
 }
+
+
+
+export const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  modules: [Navigation, Pagination, Autoplay],
+  loop: true,
+  allowTouchMove: true,
+  autoplay: {
+    delay: 5000,
+  },
+  slidesPerView: 'auto',
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+    direction: 'horizontal',
+  }
+});
+
+
+import Typed from 'typed.js';
+export const typed = new Typed("#type-it", {
+  strings: ["Frontend разработчик.", "Верстальщик", "Молодой человек"],
+  typeSpeed: 75,
+  backSpeed: 50,
+  backDelay: 800,
+  startDelay: 500,
+  loop: true,
+  showCursor: false,
+  cursorChar: "|",
+  attr: null,
+});

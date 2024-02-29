@@ -45,7 +45,7 @@
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "sass": "^1.69.7",
-    "swiper": "^11.0.5",
+    "swiper": "^11.0.7",
     "webp-converter": "^2.2.3",
     "webpack": "^5.89.0",
     "webpack-stream": "^7.0.0"
