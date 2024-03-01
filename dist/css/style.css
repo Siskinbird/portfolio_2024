@@ -7852,15 +7852,16 @@ h5,
   margin-right: 10px;
 }
 
-.nav-menu li:hover {
-  color: #2fbf71;
-  text-shadow: 2px 1px 1px #ec0569;
-}
-
 .nav-menu li a {
   text-decoration: none;
   color: #fff;
   font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover {
+  color: #2fbf71;
+  scale: 105%;
 }
 
 h3,

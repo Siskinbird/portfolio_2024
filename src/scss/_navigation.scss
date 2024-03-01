@@ -16,14 +16,18 @@
     .link {
       margin-right: 10px;
     }
-    &:hover {
-      color: $px-theme;
-      text-shadow: 2px 1px 1px $text-shadow;
-    }
+
     a {
       text-decoration: none;
       color: $white;
       font-weight: 400;
+      transition: .3s ease-in-out;
+      &:hover {
+        color: $px-theme;
+        //font-weight: 500;
+        scale: (105%);
+        //text-shadow: 2px 1px 1px $text-shadow;
+      }
     }
   }
 }
