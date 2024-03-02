@@ -10205,10 +10205,6 @@ you can use the generic selector below, but it's slower:
   margin-bottom: 20px;
 }
 
-textarea {
-  height: 161px;
-}
-
 .contact-form .form-control {
   color: #fff;
   background: none;
