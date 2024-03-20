@@ -29,6 +29,12 @@
         //text-shadow: 2px 1px 1px $text-shadow;
       }
     }
+    a.active {
+        color: $px-theme;
+        //font-weight: 500;
+        scale: (105%);
+        //text-shadow: 2px 1px 1px $text-shadow;
+    }
   }
 }
 

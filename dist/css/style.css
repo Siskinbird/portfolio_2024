@@ -7864,6 +7864,11 @@ h5,
   scale: 105%;
 }
 
+.nav-menu li a.active {
+  color: #2fbf71;
+  scale: 105%;
+}
+
 h3,
 .h3 {
   color: #fff;

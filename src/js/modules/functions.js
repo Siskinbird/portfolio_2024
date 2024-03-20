@@ -1,5 +1,6 @@
 import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import Swiper from "swiper";
+import $ from "jquery";
 Swiper.use([Autoplay, Navigation, Pagination]);
 
 
@@ -34,7 +35,6 @@ export const menuToggle = () => {
 }
 
 
-
 export const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   modules: [Navigation, Pagination, Autoplay],
@@ -66,3 +66,4 @@ export const typed = new Typed("#type-it", {
   cursorChar: "|",
   attr: null,
 });
+
