@@ -1,8 +1,11 @@
 import * as myFunctions from './modules/functions.js';
 import $ from "jquery";
+import {portfolioLinkToggle} from "./modules/functions.js";
 
 myFunctions.isWebp();
 myFunctions.menuToggle();
+myFunctions.portfolioLinkToggle();
+
 
 let sections = $('section')
     , nav = $('nav')
@@ -37,5 +40,9 @@ nav.find('a').on('click', function () {
 });
 
 
+/** * TEST BLOCK*/
+// $('.filter li').click(function() {
+//     $(this).addClass('active').siblings().removeClass('active');
+// });
 
 

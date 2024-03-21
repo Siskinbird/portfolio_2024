@@ -20,6 +20,8 @@ export const isWebp = () => {
   });
 }
 
+/**Left header open/close */
+
 export const menuToggle = () => {
   let sidebar = document.getElementById('header-left');
   let toggler = document.getElementById('toggle-menu');
@@ -34,6 +36,7 @@ export const menuToggle = () => {
   })
 }
 
+/**Swiper initialization*/
 
 export const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
@@ -53,8 +56,10 @@ export const swiper = new Swiper('.swiper', {
   }
 });
 
+/**Type text on head block*/
 
 import Typed from 'typed.js';
+
 export const typed = new Typed("#type-it", {
   strings: ["Frontend разработчик.", "Верстальщик", "Молодой человек"],
   typeSpeed: 75,
@@ -67,3 +72,9 @@ export const typed = new Typed("#type-it", {
   attr: null,
 });
 
+/**Links toggle*/
+export const portfolioLinkToggle = () => {
+  $('.filter li').click(function() {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+}

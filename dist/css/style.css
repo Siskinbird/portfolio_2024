@@ -26,6 +26,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -10173,6 +10175,157 @@ you can use the generic selector below, but it's slower:
   z-index: 1;
 }
 
+/*---------------------------
+ Portfolio Start
+------------------------------*/
+
+.portfolio-content.grid-col-2 .grid-item {
+  width: 50%;
+}
+
+.portfolio-content.grid-gutter-md {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.portfolio-content.grid-gutter-md .grid-item {
+  padding: 8px;
+}
+
+.portfolio-content.grid-gutter-lg {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.portfolio-content.grid-gutter-lg .grid-item {
+  padding: 12px;
+}
+
+.portfolio-content .grid-item {
+  float: left;
+}
+
+/*Portfolio Filter*/
+
+.portfolio-filter-01 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.portfolio-filter-01 .filter li {
+  cursor: pointer;
+  margin: 0 15px;
+  color: #fff;
+  position: relative;
+  padding: 5px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.theme-light .portfolio-filter-01 .filter li {
+  color: #0b0b13;
+}
+
+.portfolio-filter-01 .filter li:after {
+  content: "";
+  width: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 2px;
+  background: #2fbf71;
+  position: absolute;
+  transition: ease all 0.55s;
+}
+
+.portfolio-filter-01 .filter li:last-child {
+  margin-right: 0;
+}
+
+.portfolio-filter-01 .filter li:first-child {
+  margin-left: 0;
+}
+
+.portfolio-filter-01 .filter li.active:after {
+  width: 100%;
+}
+
+/*Portfolio Style 2*/
+
+.portfolio-box-01 {
+  background: #fff;
+  position: relative;
+}
+
+.portfolio-box-01 .portfolio-img {
+  position: relative;
+}
+
+.portfolio-box-01 .portfolio-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: ease all 0.35s;
+}
+
+.portfolio-box-01 .portfolio-icon a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  background: #2fbf71;
+  font-size: 24px;
+  text-align: center;
+}
+
+.portfolio-box-01 .portfolio-icon a span {
+  line-height: inherit;
+}
+
+.portfolio-box-01 .portfolio-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+  z-index: 1;
+  background: #0b0b13;
+  right: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: ease all 0.35s;
+}
+
+.portfolio-box-01 .portfolio-info h5,
+.portfolio-box-01 .portfolio-info .h5 {
+  margin: 0 0 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.portfolio-box-01 .portfolio-info h5 a,
+.portfolio-box-01 .portfolio-info .h5 a {
+  color: #fff;
+}
+
+.portfolio-box-01 .portfolio-info span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio-box-01:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio-box-01:hover .portfolio-icon {
+  opacity: 1;
+}
+
 .contact-info {
   background: #0b0b13;
   padding: 30px;
@@ -13595,6 +13748,18 @@ h6,
   .main .main-img img {
     border-radius: 50%;
   }
+
+  .portfolio-content.grid-col-3 .grid-item {
+    width: 33.3333%;
+  }
+
+  .portfolio-content.grid-col-4 .grid-item {
+    width: 33.3333%;
+  }
+
+  .portfolio-content.grid-col-5 .grid-item {
+    width: 33.3333%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -14763,6 +14928,14 @@ h6,
     position: absolute;
     height: 100%;
     width: calc(100% - 250px);
+  }
+
+  .portfolio-content.grid-col-4 .grid-item {
+    width: 25%;
+  }
+
+  .portfolio-content.grid-col-5 .grid-item {
+    width: 20%;
   }
 }
 
@@ -16174,6 +16347,18 @@ h6,
     max-width: 100px;
   }
 
+  .portfolio-content.grid-col-3 .grid-item {
+    width: 50%;
+  }
+
+  .portfolio-content.grid-col-4 .grid-item {
+    width: 50%;
+  }
+
+  .portfolio-content.grid-col-5 .grid-item {
+    width: 50%;
+  }
+
   .contact-info {
     margin-bottom: 20px;
   }
@@ -16296,6 +16481,27 @@ h6,
     position: relative;
     margin-bottom: 14px;
     vertical-align: top;
+  }
+
+  .portfolio-content.grid-col-2 .grid-item {
+    width: 100%;
+  }
+
+  .portfolio-content.grid-col-3 .grid-item {
+    width: 100%;
+  }
+
+  .portfolio-content.grid-col-4 .grid-item {
+    width: 100%;
+  }
+
+  .portfolio-content.grid-col-5 .grid-item {
+    width: 100%;
+  }
+
+  .portfolio-filter-01 .filter li {
+    margin: 0 8px;
+    font-size: 15px;
   }
 
   .section {
