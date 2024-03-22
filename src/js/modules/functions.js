@@ -21,20 +21,39 @@ export const isWebp = () => {
 }
 
 /**Left header open/close */
-
 export const menuToggle = () => {
-  let sidebar = document.getElementById('header-left');
-  let toggler = document.getElementById('toggle-menu');
-  toggler.addEventListener('click', () => {
-    if (!toggler.classList.contains('open')) {
-      toggler.classList.add('open');
-      sidebar.style.left = 0;
-    } else {
-      toggler.classList.remove('open');
-      sidebar.style.left = '-300px';
-    }
-  })
+  $(function () {
+    $('.toggle-menu').on('click', function (e) {
+      $('.header-left').toggleClass('menu-open');
+      e.stopPropagation();
+      return false;
+    });
+  });
 }
+
+// export const menuToggle = () => {
+//   let sidebar = document.getElementById('header-left');
+//   let toggler = document.getElementById('toggle-menu');
+//   toggler.addEventListener('click', () => {
+//     if (sidebar.style.left === Number(-300)) {
+//       sidebar.style.left = Number(0);
+//     } else {
+//       sidebar.style.left = Number('-300');
+//     }
+//   })
+// }
+
+// toggler.addEventListener('click', () => {
+//   if (!toggler.classList.contains('menu-open')) {
+//     toggler.classList.add('menu-open');
+//     sidebar.style.left = 0;
+//   } else {
+//     toggler.classList.remove('menu-open');
+//     sidebar.style.left = '-300px';
+//   }
+// })
+
+
 
 /**Swiper initialization*/
 

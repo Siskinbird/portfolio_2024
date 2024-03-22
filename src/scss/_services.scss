@@ -3,6 +3,9 @@
   z-index: 1;
   background: $px-dark;
   transition: ease background 0.35s;
+  &:hover {
+    background: $px-theme;
+  }
 }
 
 .feature-box-01 .future-content {

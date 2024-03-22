@@ -42,8 +42,16 @@
     left: 0;
     z-index: 222;
   }
-  @include _1200 {
+  @include down-lg {
     left:  -300px;
     z-index: 22;
+  }
+}
+
+.header-left {
+  @include down-lg {
+    &.menu-open {
+      left: 0;
+    }
   }
 }

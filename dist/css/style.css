@@ -8071,6 +8071,10 @@ span .h6 {
   transition: ease background 0.35s;
 }
 
+.feature-box-01:hover {
+  background: #2fbf71;
+}
+
 .feature-box-01 .future-content {
   padding-left: 2rem;
 }
@@ -16130,6 +16134,10 @@ h6,
   .header-left {
     left: -300px;
     z-index: 22;
+  }
+
+  .header-left.menu-open {
+    left: 0;
   }
 
   .feature-box-01 .future-content {
