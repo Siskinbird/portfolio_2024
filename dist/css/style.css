@@ -10183,30 +10183,18 @@ you can use the generic selector below, but it's slower:
  Portfolio Start
 ------------------------------*/
 
-.portfolio-content.grid-col-2 .grid-item {
-  width: 50%;
+.portfolio-img img {
+  max-width: 100%;
 }
 
-.portfolio-content.grid-gutter-md {
-  margin-left: -4px;
-  margin-right: -4px;
+.grid-item {
+  margin: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.portfolio-content.grid-gutter-md .grid-item {
-  padding: 8px;
-}
-
-.portfolio-content.grid-gutter-lg {
-  margin-left: -12px;
-  margin-right: -12px;
-}
-
-.portfolio-content.grid-gutter-lg .grid-item {
-  padding: 12px;
-}
-
-.portfolio-content .grid-item {
-  float: left;
+.row {
+  padding: 0;
 }
 
 /*Portfolio Filter*/
@@ -10260,7 +10248,6 @@ you can use the generic selector below, but it's slower:
 /*Portfolio Style 2*/
 
 .portfolio-box-01 {
-  background: #fff;
   position: relative;
 }
 
@@ -13752,18 +13739,6 @@ h6,
   .main .main-img img {
     border-radius: 50%;
   }
-
-  .portfolio-content.grid-col-3 .grid-item {
-    width: 33.3333%;
-  }
-
-  .portfolio-content.grid-col-4 .grid-item {
-    width: 33.3333%;
-  }
-
-  .portfolio-content.grid-col-5 .grid-item {
-    width: 33.3333%;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -14932,14 +14907,6 @@ h6,
     position: absolute;
     height: 100%;
     width: calc(100% - 250px);
-  }
-
-  .portfolio-content.grid-col-4 .grid-item {
-    width: 25%;
-  }
-
-  .portfolio-content.grid-col-5 .grid-item {
-    width: 20%;
   }
 }
 
@@ -16355,18 +16322,6 @@ h6,
     max-width: 100px;
   }
 
-  .portfolio-content.grid-col-3 .grid-item {
-    width: 50%;
-  }
-
-  .portfolio-content.grid-col-4 .grid-item {
-    width: 50%;
-  }
-
-  .portfolio-content.grid-col-5 .grid-item {
-    width: 50%;
-  }
-
   .contact-info {
     margin-bottom: 20px;
   }
@@ -16489,22 +16444,6 @@ h6,
     position: relative;
     margin-bottom: 14px;
     vertical-align: top;
-  }
-
-  .portfolio-content.grid-col-2 .grid-item {
-    width: 100%;
-  }
-
-  .portfolio-content.grid-col-3 .grid-item {
-    width: 100%;
-  }
-
-  .portfolio-content.grid-col-4 .grid-item {
-    width: 100%;
-  }
-
-  .portfolio-content.grid-col-5 .grid-item {
-    width: 100%;
   }
 
   .portfolio-filter-01 .filter li {

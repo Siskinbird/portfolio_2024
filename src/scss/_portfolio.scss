@@ -2,96 +2,109 @@
 /*---------------------------
  Portfolio Start
 ------------------------------*/
-.portfolio-content {
-  &.grid-col-2 {
-    .grid-item {
-      width: 50%;
-
-      @include down-sm {
-        width: 100%;
-      }
-    }
+.portfolio-img {
+  img {
+    max-width: 100%;
   }
-
-  &.grid-col-3 {
-    .grid-item {
-      @include up-md {
-        width: 33.3333%;
-      }
-
-      @include down-md {
-        width: 50%;
-      }
-
-      @include down-sm {
-        width: 100%;
-      }
-    }
-  }
-
-  &.grid-col-4 {
-    .grid-item {
-      @include up-md {
-        width: 33.3333%;
-      }
-
-      @include up-lg {
-        width: 25%;
-      }
-
-      @include down-md {
-        width: 50%;
-      }
-
-      @include down-sm {
-        width: 100%;
-      }
-    }
-  }
-
-  &.grid-col-5 {
-    .grid-item {
-      @include up-md {
-        width: 33.3333%;
-      }
-
-      @include up-lg {
-        width: 20%;
-      }
-
-      @include down-md {
-        width: 50%;
-      }
-
-      @include down-sm {
-        width: 100%;
-      }
-    }
-  }
-
-  &.grid-gutter-md {
-    margin-left: -4px;
-    margin-right: -4px;
-
-    .grid-item {
-      padding: 8px;
-    }
-  }
-
-  &.grid-gutter-lg {
-    margin-left: -12px;
-    margin-right: -12px;
-
-    .grid-item {
-      padding: 12px;
-    }
-  }
-
-  .grid-item {
-    float: left;
-  }
-
 }
+.grid-item {
+  margin: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.row {
+  padding: 0;
+}
+//.portfolio-content {
+//  &.grid-col-2 {
+//    .grid-item {
+//      width: 50%;
+//
+//      @include down-sm {
+//        width: 100%;
+//      }
+//    }
+//  }
+//
+//  &.grid-col-3 {
+//    .grid-item {
+//      @include up-md {
+//        width: 33.3333%;
+//      }
+//
+//      @include down-md {
+//        width: 50%;
+//      }
+//
+//      @include down-sm {
+//        width: 100%;
+//      }
+//    }
+//  }
+//
+//  &.grid-col-4 {
+//    .grid-item {
+//      @include up-md {
+//        width: 33.3333%;
+//      }
+//
+//      @include up-lg {
+//        width: 25%;
+//      }
+//
+//      @include down-md {
+//        width: 50%;
+//      }
+//
+//      @include down-sm {
+//        width: 100%;
+//      }
+//    }
+//  }
+//
+//  &.grid-col-5 {
+//    .grid-item {
+//      @include up-md {
+//        width: 33.3333%;
+//      }
+//
+//      @include up-lg {
+//        width: 20%;
+//      }
+//
+//      @include down-md {
+//        width: 50%;
+//      }
+//
+//      @include down-sm {
+//        width: 100%;
+//      }
+//    }
+//  }
+//
+//  &.grid-gutter-md {
+//    margin-left: -4px;
+//    margin-right: -4px;
+//
+//    .grid-item {
+//      padding: 8px;
+//    }
+//  }
+//
+//  &.grid-gutter-lg {
+//    margin-left: -12px;
+//    margin-right: -12px;
+//
+//    .grid-item {
+//      padding: 12px;
+//    }
+//  }
+//
+//  .grid-item {
+//    float: left;
+//  }
+//
+//}
 
 /*Portfolio Filter*/
 .portfolio-filter-01 {
@@ -149,7 +162,7 @@
 
 /*Portfolio Style 2*/
 .portfolio-box-01 {
-  background: $white;
+  //background: $white;
   position: relative;
   .portfolio-img {
     position: relative;
