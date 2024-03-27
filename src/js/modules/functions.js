@@ -31,30 +31,6 @@ export const menuToggle = () => {
   });
 }
 
-// export const menuToggle = () => {
-//   let sidebar = document.getElementById('header-left');
-//   let toggler = document.getElementById('toggle-menu');
-//   toggler.addEventListener('click', () => {
-//     if (sidebar.style.left === Number(-300)) {
-//       sidebar.style.left = Number(0);
-//     } else {
-//       sidebar.style.left = Number('-300');
-//     }
-//   })
-// }
-
-// toggler.addEventListener('click', () => {
-//   if (!toggler.classList.contains('menu-open')) {
-//     toggler.classList.add('menu-open');
-//     sidebar.style.left = 0;
-//   } else {
-//     toggler.classList.remove('menu-open');
-//     sidebar.style.left = '-300px';
-//   }
-// })
-
-
-
 /**Swiper initialization*/
 
 export const swiper = new Swiper('.swiper', {
@@ -97,3 +73,131 @@ export const portfolioLinkToggle = () => {
     $(this).addClass('active').siblings().removeClass('active');
   });
 }
+
+/**================================================================================*/
+/**-----------------------------PORTFOLIO GALLERY----------------------------------*/
+/**================================================================================*/
+const portfolioItem = document.getElementsByClassName('portfolio-item')
+const portfolioAll = document.getElementById("portfolio-all");
+const portfolioLayout = document.getElementById("portfolio-layout");
+const portfolioApps = document.getElementById("portfolio-apps");
+const pointer = document.getElementsByClassName('pointer')
+const portfolioFilter = document.getElementById('filter')
+
+portfolioFilter.addEventListener('click', function (event) {
+  if(event.target === portfolioApps) {
+    portfolioItem[1].style.opacity = '0';
+    portfolioItem[1].style.transform = 'scale(0)';
+    portfolioItem[1].style.transition = '.5s';
+    //portfolioItem[1].style.display = 'none';
+
+    portfolioItem[2].style.opacity = '0';
+    portfolioItem[2].style.transform = 'scale(0)';
+    portfolioItem[2].style.transition = '.5s';
+    //portfolioItem[2].style.display = 'none';
+
+    portfolioItem[3].style.opacity = '0';
+    portfolioItem[3].style.transform = 'scale(0)';
+    portfolioItem[3].style.transition = '.5s';
+    //portfolioItem[3].style.display = 'none';
+
+    portfolioItem[5].style.opacity = '0';
+    portfolioItem[5].style.transform = 'scale(0)';
+    portfolioItem[5].style.transition = '.5s';
+    // portfolioItem[5].style.display = 'none';
+
+    portfolioItem[0].style.opacity = '1';
+    portfolioItem[0].style.transform = 'scale(1)';
+    portfolioItem[0].style.display = 'block';
+    portfolioItem[0].style.transition = '.5s';
+
+    portfolioItem[4].style.display = 'block';
+    portfolioItem[4].style.transform = 'scale(1)';
+    portfolioItem[4].style.opacity = '1';
+    portfolioItem[4].style.transition = '.5s';
+    portfolioItem[4].style.top = '0';
+
+  }else if(event.target === portfolioLayout) {
+    portfolioItem[0].style.opacity = '0';
+    portfolioItem[0].style.transform = 'scale(0)';
+    portfolioItem[0].style.transition = '.5s';
+    //portfolioItem[0].style.display = 'none';
+
+    portfolioItem[4].style.opacity = '0';
+    portfolioItem[4].style.transform = 'scale(0)';
+    portfolioItem[4].style.transition = '.5s';
+    //portfolioItem[4].style.display = 'none';
+
+    portfolioItem[1].style.display = 'block';
+    portfolioItem[1].style.opacity = '1';
+    portfolioItem[1].style.transform = 'scale(1)';
+    portfolioItem[1].style.transition = '.5s';
+    portfolioItem[1].style.top = '0';
+    portfolioItem[1].style.left = '0';
+
+    portfolioItem[2].style.display = 'block';
+    portfolioItem[2].style.opacity = '1';
+    portfolioItem[2].style.transform = 'scale(1)';
+    portfolioItem[2].style.transition = '.5s';
+    portfolioItem[2].style.top = '0';
+    portfolioItem[2].style.left = '33.3319%';
+
+    portfolioItem[3].style.display = 'block';
+    portfolioItem[3].style.opacity = '1';
+    portfolioItem[3].style.transform = 'scale(1)';
+    portfolioItem[3].style.transition = '.5s';
+    portfolioItem[3].style.top = '0';
+    portfolioItem[3].style.left = '66.6638%';
+
+    portfolioItem[5].style.display = 'block';
+    portfolioItem[5].style.opacity = '1';
+    portfolioItem[5].style.transform = 'scale(1)';
+    portfolioItem[5].style.transition = '.5s';
+    portfolioItem[5].style.top = '28%';
+    portfolioItem[5].style.left = '0';
+
+  }else if(event.target === portfolioAll) {
+    portfolioItem[0].style.opacity = '1';
+    portfolioItem[0].style.transform = 'scale(1)';
+    portfolioItem[0].style.transition = '.5s';
+    portfolioItem[0].style.display = 'block';
+    portfolioItem[0].style.top = '0';
+    portfolioItem[0].style.left = '0';
+
+    portfolioItem[1].style.display = 'block';
+    portfolioItem[1].style.opacity = '1';
+    portfolioItem[1].style.transform = 'scale(1)';
+    portfolioItem[1].style.transition = '.5s';
+    portfolioItem[1].style.top = '0';
+    portfolioItem[1].style.left = '33.3319%';
+
+    portfolioItem[2].style.display = 'block';
+    portfolioItem[2].style.opacity = '1';
+    portfolioItem[2].style.transform = 'scale(1)';
+    portfolioItem[2].style.transition = '.5s';
+    portfolioItem[2].style.top = '0';
+    portfolioItem[2].style.left = '66.3338%';
+
+    portfolioItem[3].style.display = 'block';
+    portfolioItem[3].style.opacity = '1';
+    portfolioItem[3].style.transform = 'scale(1)';
+    portfolioItem[3].style.transition = '.5s';
+    portfolioItem[3].style.top = '38%';
+    portfolioItem[3].style.left = '0';
+
+    portfolioItem[4].style.display = 'block';
+    portfolioItem[4].style.opacity = '1';
+    portfolioItem[4].style.transform = 'scale(1)';
+    portfolioItem[4].style.transition = '.5s';
+    portfolioItem[4].style.top = '28%';
+    portfolioItem[4].style.left = '33.3319%';
+
+    portfolioItem[5].style.display = 'block';
+    portfolioItem[5].style.opacity = '1';
+    portfolioItem[5].style.transform = 'scale(1)';
+    portfolioItem[5].style.transition = '.5s';
+    portfolioItem[5].style.top = '48%';
+    portfolioItem[5].style.left = '66.3338%';
+  }
+
+})

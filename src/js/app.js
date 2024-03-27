@@ -41,8 +41,6 @@ nav.find('a').on('click', function () {
 
 
 /** * TEST BLOCK*/
-// $('.filter li').click(function() {
-//     $(this).addClass('active').siblings().removeClass('active');
-// });
+
 
 

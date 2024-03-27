@@ -10179,32 +10179,27 @@ you can use the generic selector below, but it's slower:
   z-index: 1;
 }
 
-/*---------------------------
- Portfolio Start
-------------------------------*/
+/**--------------------------PORTFOLIO------------------------*/
 
-.portfolio-img img {
-  max-width: 100%;
+.portfolio-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+  z-index: 1;
+  background: #10101a;
+  right: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: ease all 0.35s;
 }
 
-.grid-item {
-  margin: 12px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.row {
-  padding: 0;
-}
-
-/*Portfolio Filter*/
-
-.portfolio-filter-01 {
+.portfolio-filter {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.portfolio-filter-01 .filter li {
+.portfolio-filter li {
   cursor: pointer;
   margin: 0 15px;
   color: #fff;
@@ -10216,13 +10211,19 @@ you can use the generic selector below, but it's slower:
   letter-spacing: 2px;
 }
 
-.theme-light .portfolio-filter-01 .filter li {
-  color: #0b0b13;
+.portfolio-filter li:first-child {
+  margin-left: 0;
 }
 
-.portfolio-filter-01 .filter li:after {
+.portfolio-filter__nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.portfolio-filter__nav .pointer:after {
   content: "";
-  width: 0px;
+  width: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -10233,29 +10234,41 @@ you can use the generic selector below, but it's slower:
   transition: ease all 0.55s;
 }
 
-.portfolio-filter-01 .filter li:last-child {
-  margin-right: 0;
-}
-
-.portfolio-filter-01 .filter li:first-child {
-  margin-left: 0;
-}
-
-.portfolio-filter-01 .filter li.active:after {
+.portfolio-filter__nav .pointer.active:after {
   width: 100%;
 }
 
-/*Portfolio Style 2*/
+.portfolio-content {
+  position: relative;
+  height: 1100px;
+}
 
-.portfolio-box-01 {
+.portfolio-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 12px;
+  width: 33.333333%;
+}
+
+.portfolio-box {
+  background: #fff;
   position: relative;
 }
 
-.portfolio-box-01 .portfolio-img {
-  position: relative;
+.portfolio-box:hover .portfolio-info {
+  opacity: 1;
 }
 
-.portfolio-box-01 .portfolio-icon {
+.portfolio-box:hover .portfolio-icon {
+  opacity: 1;
+}
+
+.portfolio-image img {
+  max-width: 100%;
+}
+
+.portfolio-image .portfolio-icon {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -10263,7 +10276,7 @@ you can use the generic selector below, but it's slower:
   transition: ease all 0.35s;
 }
 
-.portfolio-box-01 .portfolio-icon a {
+.portfolio-image .portfolio-icon a {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -10273,48 +10286,6 @@ you can use the generic selector below, but it's slower:
   background: #2fbf71;
   font-size: 24px;
   text-align: center;
-}
-
-.portfolio-box-01 .portfolio-icon a span {
-  line-height: inherit;
-}
-
-.portfolio-box-01 .portfolio-info {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 20px;
-  z-index: 1;
-  background: #0b0b13;
-  right: 20px;
-  text-align: center;
-  opacity: 0;
-  transition: ease all 0.35s;
-}
-
-.portfolio-box-01 .portfolio-info h5,
-.portfolio-box-01 .portfolio-info .h5 {
-  margin: 0 0 4px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 22px;
-}
-
-.portfolio-box-01 .portfolio-info h5 a,
-.portfolio-box-01 .portfolio-info .h5 a {
-  color: #fff;
-}
-
-.portfolio-box-01 .portfolio-info span {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.portfolio-box-01:hover .portfolio-info {
-  opacity: 1;
-}
-
-.portfolio-box-01:hover .portfolio-icon {
-  opacity: 1;
 }
 
 .contact-info {
@@ -16444,11 +16415,6 @@ h6,
     position: relative;
     margin-bottom: 14px;
     vertical-align: top;
-  }
-
-  .portfolio-filter-01 .filter li {
-    margin: 0 8px;
-    font-size: 15px;
   }
 
   .section {

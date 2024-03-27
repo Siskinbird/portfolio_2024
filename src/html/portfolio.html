@@ -1,84 +1,110 @@
-<section id="portfolio">
+<!---------------------PORTFOLIO----------------------->
+<section class="portfolio" id="portfolio">
     <div class="container">
         <div class="title">
-            <h3>Мои работы</h3>
+            <h3>портфолио</h3>
         </div>
-        <div class="portfolio-filter-01">
-            <ul class="filter nav">
-                <li class="c-pointer">Все проекты</li>
-                <li class="c-pointer">Приложения</li>
-                <li class="c-pointer">Вёрстка</li>
+        <div class="portfolio-filter" id="filter">
+            <ul class="portfolio-filter__nav d-flex flex-wrap" id="portfolio-filter">
+                <li id="portfolio-all" class="pointer active">все работы</li>
+                <li id="portfolio-layout" class="pointer">лэндинги</li>
+                <li id="portfolio-apps" class="pointer">приложения</li>
             </ul>
         </div>
-<div class="row justify-content-start align-items-center">
-        <div class="grid-item col-12 col-md-5 col-xl-3">
-            <div class="portfolio-box-01">
-                <div class="portfolio-info">
-                    <h5>Приложение "Заметки"</h5>
-                    <span>Создано при помощи фреймворка Vue.js</span>
-                </div>
-                <div class="portfolio-img">
-                    <img src="@img/portfolio/all/11.jpg" alt="">
-                    <div class="portfolio-icon">
-                        <a href="https://themetka.ru">
-                            <span class="material-symbols-rounded">add</span>
-                        </a>
+        <div class="portfolio-content">
+            <div class="portfolio-item all" style="position: absolute; top: 0; left: 0;">
+                <div class="portfolio-box">
+                    <div class="portfolio-info">
+                        <h5>Очень крутая и качественная работа!</h5>
+                    </div>
+                    <div class="portfolio-image">
+                        <img src="@img/portfolio/all/1.jpg" alt=""/>
+                        <div class="portfolio-icon">
+                            <a href="#">
+                                <span class="material-symbols-rounded">add</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-item col-12 col-md-5 col-xl-3">
-            <div class="portfolio-box-01">
-                <div class="portfolio-info">
-                    <h5>Приложение "Заметки"</h5>
-                    <span>Создано при помощи фреймворка Vue.js</span>
-                </div>
-                <div class="portfolio-img">
-                    <img src="@img/portfolio/all/11.jpg" alt="">
-                    <div class="portfolio-icon">
-                        <a href="https://themetka.ru">
-                            <span class="material-symbols-rounded">add</span>
-                        </a>
+            <div class="portfolio-item layout" style="position: absolute; top: 0; left: 33.3319%;">
+                <div class="portfolio-box">
+                    <div class="portfolio-info">
+                        <h5>Очень крутая и качественная работа!</h5>
+                    </div>
+                    <div class="portfolio-image">
+                        <img src="@img/portfolio/all/2.jpg" alt=""/>
+                        <div class="portfolio-icon">
+                            <a href="#">
+                                <span class="material-symbols-rounded">add</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-item col-12 col-md-5 col-xl-3">
-            <div class="portfolio-box-01">
-                <div class="portfolio-info">
-                    <h5>Приложение "Заметки"</h5>
-                    <span>Создано при помощи фреймворка Vue.js</span>
-                </div>
-                <div class="portfolio-img">
-                    <img src="@img/portfolio/all/11.jpg" alt="">
-                    <div class="portfolio-icon">
-                        <a href="https://themetka.ru">
-                            <span class="material-symbols-rounded">add</span>
-                        </a>
+            <div class="portfolio-item apps" style="position: absolute; top: 0; left: 66.6638%;">
+                <div class="portfolio-box">
+                    <div class="portfolio-info">
+                        <h5>Очень крутая и качественная работа!</h5>
+                    </div>
+                    <div class="portfolio-image">
+                        <img src="@img/portfolio/all/3.jpg" alt=""/>
+                        <div class="portfolio-icon">
+                            <a href="#">
+                                <span class="material-symbols-rounded">add</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-</div>
 
+            <div class="portfolio-item apps" style="position: absolute; top: 38%; left: 0;">
+                <div class="portfolio-box">
+                    <div class="portfolio-info">
+                        <h5>Очень крутая и качественная работа!</h5>
+                    </div>
+                    <div class="portfolio-image">
+                        <img src="@img/portfolio/all/4.jpg" alt=""/>
+                        <div class="portfolio-icon">
+                            <a href="#">
+                                <span class="material-symbols-rounded">add</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                                    <!--        <div class="portfolio-content grid-gutter-lg grid-col-3" style="position: relative; height: 1200px">-->
-<!--            <div class="grid-item product branding fashion">-->
-<!--                <div class="portfolio-box-01">-->
-<!--                    <div class="portfolio-info">-->
-<!--                        <h5 class="white-color font-weight-bold">Mob ios App</h5>-->
-<!--                        <span>Broadkasting ios App</span>-->
-<!--                    </div>-->
-<!--                    <div class="portfolio-img">-->
-<!--                        <img src="@img/portfolio/m-portfolio-1.jpg" alt="Nigger">-->
-<!--                        <div class="portfolio-icon">-->
-<!--                            <a href="https://themetka.ru">-->
-<!--                                <span class="material-symbols-rounded">add</span>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+            <div class="portfolio-item apps" style="position: absolute; top: 28%; left: 33.3319%;">
+                <div class="portfolio-box">
+                    <div class="portfolio-info">
+                        <h5>Очень крутая и качественная работа!</h5>
+                    </div>
+                    <div class="portfolio-image">
+                        <img src="@img/portfolio/all/5.jpg" alt=""/>
+                        <div class="portfolio-icon">
+                            <a href="#">
+                                <span class="material-symbols-rounded">add</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item apps" style="position: absolute; top: 47%; left: 66.6638%;">
+                <div class="portfolio-box">
+                    <div class="portfolio-info">
+                        <h5>Очень крутая и качественная работа!</h5>
+                    </div>
+                    <div class="portfolio-image">
+                        <img src="@img/portfolio/all/6.jpg" alt=""/>
+                        <div class="portfolio-icon">
+                            <a href="#">
+                                <span class="material-symbols-rounded">add</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
