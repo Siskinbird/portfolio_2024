@@ -10243,14 +10243,6 @@ you can use the generic selector below, but it's slower:
   height: 1100px;
 }
 
-.portfolio-item {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 12px;
-  width: 33.333333%;
-}
-
 .portfolio-box {
   background: #fff;
   position: relative;
@@ -10286,6 +10278,59 @@ you can use the generic selector below, but it's slower:
   background: #2fbf71;
   font-size: 24px;
   text-align: center;
+}
+
+.portfolio-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 12px;
+  width: 33.333333%;
+  transition: ease-in-out 0.5s;
+}
+
+/**PORTFOLIO ITEMS POSITION*/
+
+.portfolio-item:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.portfolio-item:nth-child(2) {
+  top: 0;
+  left: 33.3319%;
+}
+
+.portfolio-item:nth-child(3) {
+  top: 0;
+  left: 66.6638%;
+}
+
+.portfolio-item:nth-child(4) {
+  top: 38%;
+  left: 0;
+}
+
+.portfolio-item:nth-child(5) {
+  top: 28%;
+  left: 33.3319%;
+}
+
+.portfolio-item:nth-child(6) {
+  top: 47%;
+  left: 66.6638%;
+}
+
+/**PORTFOLIO ITEMS POSITION*/
+
+.show-item {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hide-item {
+  opacity: 0;
+  transform: scale(0);
 }
 
 .contact-info {
@@ -16293,6 +16338,43 @@ h6,
     max-width: 100px;
   }
 
+  .portfolio-content {
+    height: 1500px;
+  }
+
+  .portfolio-item:nth-child(1) {
+    width: 50%;
+  }
+
+  .portfolio-item:nth-child(2) {
+    left: 49.3319%;
+    width: 50%;
+  }
+
+  .portfolio-item:nth-child(3) {
+    top: 31%;
+    left: 0;
+    width: 50%;
+  }
+
+  .portfolio-item:nth-child(4) {
+    top: 23%;
+    left: 49.3319%;
+    width: 50%;
+  }
+
+  .portfolio-item:nth-child(5) {
+    width: 50%;
+    top: 46%;
+    left: 49.3319%;
+  }
+
+  .portfolio-item:nth-child(6) {
+    top: 70%;
+    left: 0;
+    width: 50%;
+  }
+
   .contact-info {
     margin-bottom: 20px;
   }
@@ -16417,6 +16499,23 @@ h6,
     vertical-align: top;
   }
 
+  .portfolio-item:nth-child(3) {
+    top: 45%;
+  }
+
+  .portfolio-item:nth-child(4) {
+    top: 17%;
+  }
+
+  .portfolio-item:nth-child(5) {
+    left: 0;
+    top: 34%;
+  }
+
+  .portfolio-item:nth-child(6) {
+    top: 52%;
+  }
+
   .section {
     padding-bottom: 60px;
   }
@@ -16520,6 +16619,43 @@ h6,
 @media (max-width: 575.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-sm {
     transition: none;
+  }
+}
+
+@media (max-width: 567px) {
+  .portfolio-content {
+    height: 2900px;
+  }
+
+  .portfolio-item:nth-child(1) {
+    width: 100%;
+  }
+
+  .portfolio-item:nth-child(2) {
+    top: 16%;
+    left: 0;
+    width: 100%;
+  }
+
+  .portfolio-item:nth-child(3) {
+    top: 28%;
+    width: 100%;
+  }
+
+  .portfolio-item:nth-child(4) {
+    left: 0;
+    top: 48%;
+    width: 100%;
+  }
+
+  .portfolio-item:nth-child(5) {
+    top: 60%;
+    width: 100%;
+  }
+
+  .portfolio-item:nth-child(6) {
+    top: 80%;
+    width: 100%;
   }
 }
 
