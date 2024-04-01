@@ -83,9 +83,9 @@ export const portfolioLinkToggle = () => {
   const portfolioFilter = document.getElementById('portfolio-filter')
 
 portfolioFilter.addEventListener('click', function (event) {
+  let screenSize  = window.screen.availWidth;
   console.log(window.screen.availWidth);
   if(event.target === pointer[2]) {
-
     for(let item of portfolioItem) {
       if(item.classList.contains('apps')){
         item.classList.remove('hide-item')
@@ -94,7 +94,21 @@ portfolioFilter.addEventListener('click', function (event) {
         item.classList.add('hide-item')
       }
     }
-    portfolioItem[4].style.top = '0';
+    if (400 > screenSize < 576) {
+      console.log("poop");
+      //portfolioItem[4].style.left = '0';
+      portfolioItem[4].style.top = '20%';
+    }
+    if(screenSize < 400) {
+      portfolioItem[4].style.top = '17% !important';
+    }
+    if(screenSize < 365) {
+      portfolioItem[4].style.top = '14%';
+    }
+    // else {
+    //   portfolioItem[4].style.top = '0';
+    // }
+
 
   }else if(event.target === pointer[1]) {
     for(let item of portfolioItem) {

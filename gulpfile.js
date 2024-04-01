@@ -10,6 +10,8 @@ import { plugins } from './gulp/config/plugins.js';
 
 /** Передаём значение в глобальную переменную*/
 global.app = {
+  isBuild: process.argv.includes('--build'),
+  isDev: !process.argv.includes('--build'),
   path: path,
   gulp: gulp,
   plugins: plugins
@@ -24,7 +26,8 @@ import { scss } from './gulp/tasks/scss.js';
 import { js } from './gulp/tasks/js.js';
 import { images } from './gulp/tasks/images.js';
 import {otfToTtf, ttfToWoff, fontsStyle} from './gulp/tasks/fonts.js'
-import {svgSprive} from "./gulp/tasks/svgSprive.js"
+import {svgSprive} from "./gulp/tasks/svgSprive.js";
+
 
 
 const watcher = () => {
@@ -43,6 +46,12 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 const mainTasks = gulp.parallel(fonts, copy, html, scss, js, images);
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+const build = gulp.series(reset, mainTasks);
+
+//Экспорт сценариев
+export {dev}
+export {build}
+
 
 //Выполнение сценария по умолчанию 
 gulp.task('default', dev);

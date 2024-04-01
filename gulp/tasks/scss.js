@@ -11,39 +11,48 @@ const sass = gulpSass(dartSass)
 
 export const scss = () => {
   return app.gulp.src(app.path.src.scss, {
-    sourcemaps: true
+    sourcemaps: app.isDev
   })
-  .pipe(app.plugins.plumber(
-    app.plugins.notify.onError({
-      title: 'SCSS',
-      message: "Error: <%= error.message %>"
-    }))
-  )
-  .pipe(app.plugins.replace(/@img\//g, '../img/'))
-  .pipe(sass({
-    outputStyle: 'expanded'
-  }))
-  .pipe(groupCssMediaQueries())
-  .pipe(webpcss({
-    webpClass: '.webp',
-    noWebpClass: '.no-webp'
-  })) 
-    .pipe(autoprefixer({
-    grid: true,
-    overrideBrowserlist: ['last 3 version'],
-    cascade: true
-  }))
-  .pipe(app.gulp.dest(app.path.build.css)) //Нормальный css , закомментить на продакшне
-  .pipe(cleanCss())
-  .pipe(rename({
-     extname: '.min.css'
-  }))
-  .pipe(app.plugins.browsersync.stream())
-  .pipe(app.gulp.dest(app.path.build.css))
+      .pipe(app.plugins.plumber(
+          app.plugins.notify.onError({
+            title: 'SCSS',
+            message: "Error: <%= error.message %>"
+          }))
+      )
+      .pipe(app.plugins.replace(/@img\//g, '../img/'))
+      .pipe(sass({
+        outputStyle: 'expanded'
+      }))
+      .pipe(
+          app.plugins.ifPlugin(app.isBuild, groupCssMediaQueries()
+          )
+      )
+      .pipe(
+          app.plugins.ifPlugin(app.isBuild, webpcss({
+            webpClass: '.webp',
+            noWebpClass: '.no-webp'
+          }))
+      )
+      .pipe(
+          app.plugins.ifPlugin(app.isBuild, autoprefixer({
+            grid: true,
+            overrideBrowserlist: ['last 3 version'],
+            cascade: true
+          })))
+      .pipe(app.gulp.dest(app.path.build.css)) //Нормальный css , закомментить на продакшне
+      .pipe(
+          app.plugins.ifPlugin(app.isBuild, cleanCss()
+          )
+      )
+      .pipe(rename({
+        extname: '.min.css'
+      }))
+      .pipe(app.plugins.browsersync.stream())
+      .pipe(app.gulp.dest(app.path.build.css))
 
 
   /**
-   * Раскоментировать  эту строчку 
+   * Раскоментировать  эту строчку
    * .pipe(app.gulp.dest(app.path.build.css))
    */
 
