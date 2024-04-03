@@ -6,105 +6,108 @@
         </div>
         <div class="portfolio-filter" id="filter">
             <ul class="portfolio-filter__nav d-flex flex-wrap" id="portfolio-filter">
-                <li class="pointer active">все работы</li>
-                <li class="pointer">вёрстка</li>
-                <li class="pointer">приложения</li>
+                <li class="pointer active">
+                    <a id="showAllItems">Все проекты</a>
+            </li>
+                <li class="pointer">
+                    <a onclick="removeLastItems" id="removeLastItems">Вёрстка</a>
+                </li>
+                <li class="pointer">
+                    <a onclick="removeFirstItems" id="removeFirstItems">Приложения</a>
+                </li>
             </ul>
         </div>
-        <div class="portfolio-content">
-            <div class="portfolio-item apps">
+        <div class="grid-container">
+            <div class="grid-item">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
-                        <h5>Очень крутая и качественная работа!</h5>
+                        <h5>Очень крутая работа!</h5>
                     </div>
                     <div class="portfolio-image">
-                        <img src="@img/portfolio/all/1.jpg" alt=""/>
+                        <img src="@img/portfolio/all/3.jpg">
                         <div class="portfolio-icon">
-                            <a href="#">
+                            <a class="align-items-center">
+                                <span class="material-symbols-rounded">add</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="grid-item">
+                <div class="portfolio-box">
+                    <div class="portfolio-info">
+                        <h5>Очень крутая работа!</h5>
+                    </div>
+                    <div class="portfolio-image">
+                        <img src="@img/portfolio/all/5.jpg">
+                        <div class="portfolio-icon">
+                            <a class="align-items-center">
                                 <span class="material-symbols-rounded">add</span>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="portfolio-item layout">
+            <div class="grid-item">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
-                        <h5>Очень крутая и качественная работа!</h5>
+                        <h5>Очень крутая работа!</h5>
                     </div>
                     <div class="portfolio-image">
-                        <img src="@img/portfolio/all/2.jpg" alt=""/>
+                        <img src="@img/portfolio/all/5.jpg">
                         <div class="portfolio-icon">
-                            <a href="#">
+                            <a class="align-items-center">
+                                <span class="material-symbols-rounded">add</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="grid-item">
+                <div class="portfolio-box">
+                    <div class="portfolio-info">
+                        <h5>Очень крутая работа!</h5>
+                    </div>
+                    <div class="portfolio-image">
+                        <img src="@img/portfolio/all/3.jpg">
+                        <div class="portfolio-icon">
+                            <a class="align-items-center">
                                 <span class="material-symbols-rounded">add</span>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="portfolio-item layout">
+            <div class="grid-item">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
-                        <h5>Очень крутая и качественная работа!</h5>
+                        <h5>Очень крутая работа!</h5>
                     </div>
                     <div class="portfolio-image">
-                        <img src="@img/portfolio/all/3.jpg" alt=""/>
+                        <img src="@img/portfolio/all/2.jpg">
                         <div class="portfolio-icon">
-                            <a href="#">
+                            <a class="align-items-center">
                                 <span class="material-symbols-rounded">add</span>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="portfolio-item layout">
+            </div> 
+            <div class="grid-item">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
-                        <h5>Очень крутая и качественная работа!</h5>
+                        <h5>Очень крутая работа!</h5>
                     </div>
                     <div class="portfolio-image">
-                        <img src="@img/portfolio/all/4.jpg" alt=""/>
+                        <img src="@img/portfolio/all/1.jpg">
                         <div class="portfolio-icon">
-                            <a href="#">
+                            <a class="align-items-center">
                                 <span class="material-symbols-rounded">add</span>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="portfolio-item apps">
-                <div class="portfolio-box">
-                    <div class="portfolio-info">
-                        <h5>Очень крутая и качественная работа!</h5>
-                    </div>
-                    <div class="portfolio-image">
-                        <img src="@img/portfolio/all/5.jpg" alt=""/>
-                        <div class="portfolio-icon">
-                            <a href="#">
-                                <span class="material-symbols-rounded">add</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item layout">
-                <div class="portfolio-box">
-                    <div class="portfolio-info">
-                        <h5>Очень крутая и качественная работа!</h5>
-                    </div>
-                    <div class="portfolio-image">
-                        <img src="@img/portfolio/all/6.jpg" alt=""/>
-                        <div class="portfolio-icon">
-                            <a href="#">
-                                <span class="material-symbols-rounded">add</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> 
         </div>
     </div>
 </section>

@@ -14265,32 +14265,16 @@ you can use the generic selector below, but it's slower:
 .portfolio-filter__nav .pointer.active:after {
   width: 100%;
 }
-.portfolio-content {
-  position: relative;
-  height: 1100px;
-}
-@media (max-width: 991px) {
-  .portfolio-content {
-    height: 1500px;
-  }
-}
-@media (max-width: 567px) {
-  .portfolio-content {
-    height: 2900px;
-  }
-}
 .portfolio-box {
   background: #fff;
   position: relative;
+  transition: 0.5s ease-in-out;
 }
 .portfolio-box:hover .portfolio-info {
   opacity: 1;
 }
 .portfolio-box:hover .portfolio-icon {
   opacity: 1;
-}
-.portfolio-image img {
-  max-width: 100%;
 }
 .portfolio-image .portfolio-icon {
   position: absolute;
@@ -14302,7 +14286,7 @@ you can use the generic selector below, but it's slower:
 .portfolio-image .portfolio-icon a {
   width: 40px;
   height: 40px;
-  line-height: 40px;
+  line-height: 48px;
   color: #fff;
   display: inline-block;
   vertical-align: top;
@@ -14311,154 +14295,57 @@ you can use the generic selector below, but it's slower:
   text-align: center;
 }
 
-.portfolio-item {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 12px;
-  width: 33.333333%;
-  transition: ease-in-out 0.5s;
+/**GRID*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
 }
 
-/**PORTFOLIO ITEMS POSITION*/
-.portfolio-item:nth-child(1) {
-  top: 0;
-  left: 0;
-}
-@media (max-width: 991px) {
-  .portfolio-item:nth-child(1) {
-    width: 50%;
-  }
-}
-@media (max-width: 567px) {
-  .portfolio-item:nth-child(1) {
-    width: 100%;
-  }
+.grid-item {
+  position: relative;
+  background-color: transparent;
+  max-width: fit-content;
+  padding: 6px;
+  text-align: center;
+  height: fit-content;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.portfolio-item:nth-child(2) {
-  top: 0;
-  left: 33.3319%;
-}
-@media (max-width: 991px) {
-  .portfolio-item:nth-child(2) {
-    left: 49.3319%;
-    width: 50%;
-  }
-}
-@media (max-width: 567px) {
-  .portfolio-item:nth-child(2) {
-    top: 16%;
-    left: 0;
-    width: 100%;
-  }
+.grid-item img {
+  max-width: 100%;
+  height: auto;
 }
 
-.portfolio-item:nth-child(3) {
-  top: 0;
-  left: 66.6638%;
-}
-@media (max-width: 991px) {
-  .portfolio-item:nth-child(3) {
-    top: 31%;
-    left: 0;
-    width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  .portfolio-item:nth-child(3) {
-    top: 45%;
-  }
-}
-@media (max-width: 567px) {
-  .portfolio-item:nth-child(3) {
-    top: 28%;
-    width: 100%;
-  }
-}
-
-.portfolio-item:nth-child(4) {
-  top: 38%;
-  left: 0;
-}
-@media (max-width: 991px) {
-  .portfolio-item:nth-child(4) {
-    top: 23%;
-    left: 49.3319%;
-    width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  .portfolio-item:nth-child(4) {
-    top: 17%;
-  }
-}
-@media (max-width: 567px) {
-  .portfolio-item:nth-child(4) {
-    left: 0;
-    top: 48%;
-    width: 100%;
-  }
-}
-
-.portfolio-item:nth-child(5) {
-  top: 28%;
-  left: 33.3319%;
-}
-@media (max-width: 991px) {
-  .portfolio-item:nth-child(5) {
-    width: 50%;
-    top: 46%;
-    left: 49.3319%;
-  }
-}
-@media (max-width: 767px) {
-  .portfolio-item:nth-child(5) {
-    left: 0;
-    top: 34%;
-  }
-}
-@media (max-width: 567px) {
-  .portfolio-item:nth-child(5) {
-    top: 60%;
-    width: 100%;
-  }
-}
-
-.portfolio-item:nth-child(6) {
-  top: 47%;
-  left: 66.6638%;
-}
-@media (max-width: 991px) {
-  .portfolio-item:nth-child(6) {
-    top: 70%;
-    left: 0;
-    width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  .portfolio-item:nth-child(6) {
-    top: 52%;
-  }
-}
-@media (max-width: 567px) {
-  .portfolio-item:nth-child(6) {
-    top: 80%;
-    width: 100%;
-  }
-}
-
-/**PORTFOLIO ITEMS POSITION*/
-.show-item {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.hide-item {
-  opacity: 0;
+.hidden {
   transform: scale(0);
+  opacity: 0;
 }
 
+.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, auto);
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+/***/
 .contact-info {
   background: #0b0b13;
   padding: 30px;
