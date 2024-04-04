@@ -14317,7 +14317,7 @@ you can use the generic selector below, but it's slower:
   height: auto;
 }
 
-.hidden {
+.hide {
   transform: scale(0);
   opacity: 0;
 }

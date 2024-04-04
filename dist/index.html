@@ -445,19 +445,13 @@
         </div>
         <div class="portfolio-filter" id="filter">
             <ul class="portfolio-filter__nav d-flex flex-wrap" id="portfolio-filter">
-                <li class="pointer active">
-                    <a id="showAllItems">Все проекты</a>
-            </li>
-                <li class="pointer">
-                    <a onclick="removeLastItems" id="removeLastItems">Вёрстка</a>
-                </li>
-                <li class="pointer">
-                    <a onclick="removeFirstItems" id="removeFirstItems">Приложения</a>
-                </li>
+                <li class="pointer active" data-galery="all" id="showAllItems">Все проекты</li>
+                <li class="pointer" data-galery="layout" id="layout">Вёрстка</li>
+                <li class="pointer" data-galery="apps" id="layoutItems">Приложения</li>
             </ul>
         </div>
         <div class="grid-container">
-            <div class="grid-item">
+            <div class="grid-item layout">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
                         <h5>Очень крутая работа!</h5>
@@ -472,7 +466,7 @@
                     </div>
                 </div>
             </div>    
-            <div class="grid-item">
+            <div class="grid-item apps">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
                         <h5>Очень крутая работа!</h5>
@@ -487,7 +481,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item layout">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
                         <h5>Очень крутая работа!</h5>
@@ -502,7 +496,7 @@
                     </div>
                 </div>
             </div> 
-            <div class="grid-item">
+            <div class="grid-item layout">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
                         <h5>Очень крутая работа!</h5>
@@ -517,7 +511,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item layout">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
                         <h5>Очень крутая работа!</h5>
@@ -532,7 +526,7 @@
                     </div>
                 </div>
             </div> 
-            <div class="grid-item">
+            <div class="grid-item apps">
                 <div class="portfolio-box">
                     <div class="portfolio-info">
                         <h5>Очень крутая работа!</h5>
