@@ -271,11 +271,15 @@
 }
 
 .hide {
+  transition: .5s ease-in-out;
+  display: none;
   transform: scale(0);
   opacity: 0;
 }
 
 .show {
+  transition: .5s ease-in-out;
+  display: block;
   transform: scale(1);
   opacity: 1;
 }

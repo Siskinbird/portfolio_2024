@@ -75,32 +75,43 @@ export const portfolioLinkToggle = () => {
 }
 
 
-let allItems = document.querySelectorAll('.grid-item');
+let allItems = document.getElementsByClassName('grid-item');
 let links = document.querySelectorAll('.pointer');
 
-function layoutItems() {
-  let layout = [];
-allItems.forEach((item, index) => {
-  if(item.classList.contains('layout')) {
-    layout.push(item)
-  }
-  console.log(layout)
-  return layout
+let allBtn = document.getElementById(showAll);
+let layoutBtn = document.getElementById(showLayout);
+let appsBtn = document.getElementById(showApps);
+
+$(document).ready(function() {
+  $('#showLayout').click(function() {
+    $('.apps').toggle('slow', 'swing')
+  })
 })
-}
 
 
-
-
-
-
-// const changeImage = (event) => {
-//   if(event.target.classList.contains('pointer')) {
-//     const gallery = event.target.dataset.galery;
-//     console.log(gallery)
-//     items.forEach((img, index) => console.log(img.src=`/img/portfolio/${gallery}/${index + 1}.jpg`))
-//   }
+// function toggleShowApps() {
+//   $(".layout").removeClass("show");
+//   $(".layout").addClass("hide");
+//   $(".apps").addClass("show");
 // }
 
-links.forEach(link => {link.addEventListener('click',  layoutItems)})
+// function toggleShowLayout() {
+//   console.log("aim kliknut")
+//   $(".apps").removeClass("show");
+//   $(".apps").addClass("hide");
+//   $(".layout").addClass("show");
+// }
 
+// function toggleShowAll() {
+//   $(".grid-item").addClass("show");
+// }
+
+// for(let i = 0; i<links.length; i++) {
+//   links[0].addEventListener('click', toggleShowAll)
+//   links[1].addEventListener('click', toggleShowLayout)
+//   links[2].addEventListener('click', toggleShowApps)
+// }
+
+//links[0].addEventListener('click',  toggleShowAll())
+// links[1].addEventListener('click',  toggleShowLayout())
+// links[2].addEventListener('click',  toggleShowApps())
