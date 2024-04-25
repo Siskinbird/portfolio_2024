@@ -39,7 +39,7 @@ export const swiper = new Swiper('.swiper', {
   loop: true,
   allowTouchMove: true,
   autoplay: {
-    delay: 5000,
+    delay: 10000,
   },
   slidesPerView: "auto",
 
@@ -49,15 +49,6 @@ export const swiper = new Swiper('.swiper', {
     clickable: true,
     direction: 'horizontal',
   }
-});
-
-export const swiper2 = new Swiper(".portfolio-swiper", {
-  spaceBetween: 30,
-  slidesPerView: "auto",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 });
 
 /**Type text on head block*/
@@ -84,7 +75,7 @@ export const portfolioLinkToggle = () => {
 }
 
 
-let allItems = document.getElementsByClassName('grid-item');
+//let allItems = document.getElementsByClassName('grid-item');
 let links = document.querySelectorAll('.pointer');
 
 let allBtn = document.getElementById(showAll);
@@ -93,7 +84,28 @@ let appsBtn = document.getElementById(showApps);
 
 $(document).ready(function() {
   $('#showLayout').click(function() {
-    $('.apps').toggle('slow', 'swing')
+    $('.layout').css('display', 'block' )
+    $('.layout').css('transform', 'scale(1)')
+    $('.all').css('display', 'none' )
+    $('.apps').css('display', 'none' )
+  })
+})
+$(document).ready(function() {
+  $('#showApps').click(function() {
+    $('.layout').css('display', 'none' )
+    $('.all').css('display', 'none' )
+    $('.apps').css('display', 'block' )
+    $('.apps').css('transform', 'scale(1)')
+  })
+})
+$(document).ready(function() {
+  $('#showAll').click(function() {
+    $('.layout').css('display', 'none' )
+    $('.layout').css('transform', 'scale(0)')
+    $('.all').css('display', 'block' )
+    $('.all').css('transform', 'scale(1)')
+    $('.apps').css('display', 'none' )
+    $('.apps').css('transform', 'scale(0)')
   })
 })
 
