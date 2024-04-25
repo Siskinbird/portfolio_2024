@@ -1,4 +1,4 @@
-import {Autoplay, Navigation, Pagination} from 'swiper/modules';
+import {Autoplay, Navigation, Pagination, EffectFade} from 'swiper/modules';
 import Swiper from "swiper";
 import $ from "jquery";
 Swiper.use([Autoplay, Navigation, Pagination]);
@@ -41,7 +41,7 @@ export const swiper = new Swiper('.swiper', {
   autoplay: {
     delay: 5000,
   },
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
 
   pagination: {
     el: '.swiper-pagination',
@@ -49,6 +49,15 @@ export const swiper = new Swiper('.swiper', {
     clickable: true,
     direction: 'horizontal',
   }
+});
+
+export const swiper2 = new Swiper(".portfolio-swiper", {
+  spaceBetween: 30,
+  slidesPerView: "auto",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 
 /**Type text on head block*/

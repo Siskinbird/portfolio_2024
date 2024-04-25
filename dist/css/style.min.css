@@ -14212,18 +14212,6 @@ you can use the generic selector below, but it's slower:
 }
 
 /**--------------------------PORTFOLIO------------------------*/
-.portfolio-info {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 20px;
-  z-index: 1;
-  background: #10101a;
-  right: 20px;
-  text-align: center;
-  opacity: 0;
-  transition: ease all 0.35s;
-}
 .portfolio-filter {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -14265,91 +14253,23 @@ you can use the generic selector below, but it's slower:
 .portfolio-filter__nav .pointer.active:after {
   width: 100%;
 }
-.portfolio-box {
-  background: #fff;
-  position: relative;
-  transition: 0.5s ease-in-out;
-}
-.portfolio-box:hover .portfolio-info {
-  opacity: 1;
-}
-.portfolio-box:hover .portfolio-icon {
-  opacity: 1;
-}
-.portfolio-image .portfolio-icon {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  opacity: 0;
-  transition: ease all 0.35s;
-}
-.portfolio-image .portfolio-icon a {
-  width: 40px;
-  height: 40px;
-  line-height: 48px;
-  color: #fff;
-  display: inline-block;
-  vertical-align: top;
-  background: #2fbf71;
-  font-size: 24px;
-  text-align: center;
-}
 
-/**GRID*/
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 10px;
-}
-
-.grid-item {
-  position: relative;
-  background-color: transparent;
-  max-width: fit-content;
-  padding: 6px;
-  text-align: center;
-  height: fit-content;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.grid-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.hide {
-  transition: 0.5s ease-in-out;
-  display: none;
-  transform: scale(0);
-  opacity: 0;
-}
-
-.show {
-  transition: 0.5s ease-in-out;
+.swiper-slide img {
   display: block;
-  transform: scale(1);
-  opacity: 1;
+  width: 100%;
 }
 
-@media screen and (max-width: 400px) {
-  .grid-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, auto);
-  }
+swiper-button-next,
+swiper-button-prev {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 10px;
+  padding: 30px;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
 }
-@media screen and (min-width: 401px) and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, auto);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-}
-/***/
+
 .contact-info {
   background: #0b0b13;
   padding: 30px;
