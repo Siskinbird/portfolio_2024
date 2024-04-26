@@ -110,29 +110,38 @@ $(document).ready(function() {
 })
 
 
-// function toggleShowApps() {
-//   $(".layout").removeClass("show");
-//   $(".layout").addClass("hide");
-//   $(".apps").addClass("show");
-// }
+/**================================================================================*/
+/**----------------------------------CHANGE THEME----------------------------------*/
+/**================================================================================*/
 
-// function toggleShowLayout() {
-//   console.log("aim kliknut")
-//   $(".apps").removeClass("show");
-//   $(".apps").addClass("hide");
-//   $(".layout").addClass("show");
-// }
+const themeSwitch = document.querySelector('.theme-switcher');
+const body = document.getElementById('body');
 
-// function toggleShowAll() {
-//   $(".grid-item").addClass("show");
-// }
+themeSwitch.addEventListener('click', () => {
+  console.log('click')
 
-// for(let i = 0; i<links.length; i++) {
-//   links[0].addEventListener('click', toggleShowAll)
-//   links[1].addEventListener('click', toggleShowLayout)
-//   links[2].addEventListener('click', toggleShowApps)
-// }
 
-//links[0].addEventListener('click',  toggleShowAll())
-// links[1].addEventListener('click',  toggleShowLayout())
-// links[2].addEventListener('click',  toggleShowApps())
+    if (localStorage.getItem('theme') === 'lightTheme') {
+        localStorage.removeItem('theme')
+        body.classList.remove('lightTheme')
+    } else {
+        localStorage.setItem('theme', 'lightTheme')
+        body.classList.add('lightTheme')
+    }
+})
+
+/** Add theme in to local storage*/
+
+export const addLightTheme = () => {
+    try {
+        if (localStorage.getItem('theme') === 'lightTheme') {
+            body.classList.add('lightTheme')
+        } else {
+            body.classList.remove('lightTheme')
+        }
+    } catch (err) {
+        console.log('Something went wrong')
+    }
+}
+
+addLightTheme();

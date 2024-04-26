@@ -12114,6 +12114,20 @@ textarea.form-control-lg {
   border-radius: 50%;
 }
 
+.lightTheme {
+  background: #FFFFFF;
+}
+.lightTheme .mob-header {
+  background-color: #FFFFFF;
+}
+.lightTheme .mob-header .logo-text {
+  color: #10101a;
+  text-shadow: none;
+}
+.lightTheme .slider {
+  background-color: #2fbf71;
+}
+
 .mob-header {
   padding: 1rem;
   display: none;

@@ -56,3 +56,18 @@
 .slider.round:before {
   border-radius: 50%;
 }
+
+
+.lightTheme {
+  background: #FFFFFF;
+  .mob-header {
+    background-color:#FFFFFF;
+  .logo-text {
+    color: $px-bg-1;
+    text-shadow: none;
+  }
+}
+.slider {
+  background-color: $px-theme;
+}
+}

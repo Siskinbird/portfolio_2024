@@ -5,6 +5,7 @@ import {portfolioLinkToggle} from "./modules/functions.js";
 myFunctions.isWebp();
 myFunctions.menuToggle();
 myFunctions.portfolioLinkToggle();
+myFunctions.addLightTheme();
 
 
 let sections = $('section')
