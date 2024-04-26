@@ -2,19 +2,6 @@
 
 /**--------------------------PORTFOLIO------------------------*/
 .portfolio {
-  // &-info {
-  //   position: absolute;
-  //   top: 20px;
-  //   left: 20px;
-  //   padding: 20px;
-  //   z-index: 1;
-  //   background: $px-bg-1;
-  //   right: 20px;
-  //   text-align: center;
-  //   opacity: 0;
-  //   transition: ease all .35s;
-  // }
-
   &-filter {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -65,46 +52,8 @@
       }
     }
   }
-  // &-box{
-  //     background: $white;
-  //     position: relative;
-  //     transition: .5s ease-in-out;
-  //     &:hover {
-  //       .portfolio-info {
-  //         opacity: 1;
-  //       }
-  //       .portfolio-icon {
-  //         opacity: 1;
-  //       }
-  //     }
-  //   }
-  // &-image {
-  //     .portfolio-icon {
-  //       position: absolute;
-  //       bottom: 20px;
-  //       right: 20px;
-  //       opacity: 0;
-  //       transition: ease all 0.35s;
-  //       a {
-  //         width: 40px;
-  //         height: 40px;
-  //         line-height: 48px;
-  //         color: $white;
-  //         display: inline-block;
-  //         vertical-align: top;
-  //         background: $px-theme;
-  //         font-size: 24px;
-  //         text-align: center;
-  //       }
-  //     }
-  //   }
-  }
+}
 // SWIPER STYLES
-
-
-
-
-
 
 .swiper-slide img {
   display: block;
@@ -185,6 +134,9 @@ swiper-button-prev {
         background: $px-theme;
         font-size: 24px;
         text-align: center;
+        span {
+          cursor: pointer;
+        }
       }
     }
   }

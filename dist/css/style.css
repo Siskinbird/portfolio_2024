@@ -12045,6 +12045,75 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+.grid {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  background: inherit;
+  z-index: 33333;
+}
+@media (max-width: 1200px) {
+  .grid {
+    right: 75px;
+  }
+}
+
+.demo {
+  font-size: 1.5rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 1.2rem;
+}
+
+.switch .theme-switcher {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #444457;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "🌑";
+  height: 0;
+  width: 0;
+  left: -10px;
+  top: 10px;
+  line-height: 0;
+  transition: 0.4s;
+}
+
+.theme-switcher:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.theme-switcher:checked + .slider:before {
+  left: 4px;
+  content: "🌞";
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .mob-header {
   padding: 1rem;
   display: none;
@@ -14332,6 +14401,9 @@ swiper-button-prev {
   background: #2fbf71;
   font-size: 24px;
   text-align: center;
+}
+.portfolio-image .portfolio-icon a span {
+  cursor: pointer;
 }
 .portfolio-info {
   position: absolute;
