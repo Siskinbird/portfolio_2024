@@ -12049,8 +12049,7 @@ textarea.form-control-lg {
   position: fixed;
   top: 25px;
   right: 25px;
-  background: inherit;
-  z-index: 33333;
+  z-index: 3;
 }
 @media (max-width: 1200px) {
   .grid {
@@ -12115,10 +12114,11 @@ textarea.form-control-lg {
 }
 
 .lightTheme {
-  background: #FFFFFF;
+  background: #fff;
+  color: #555;
 }
 .lightTheme .mob-header {
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 .lightTheme .mob-header .logo-text {
   color: #10101a;
@@ -12126,6 +12126,116 @@ textarea.form-control-lg {
 }
 .lightTheme .slider {
   background-color: #2fbf71;
+}
+.lightTheme .pp-section {
+  background: #fff;
+}
+.lightTheme .home-banner::after {
+  background: #f7f7ff;
+  z-index: 0;
+}
+.lightTheme .header-left {
+  background: #f7f7ff;
+}
+.lightTheme .home-banner .type-box h5, .lightTheme .home-banner .type-box .h5 {
+  color: #000;
+}
+.lightTheme .home-banner .font-alt {
+  text-shadow: none;
+  color: #000;
+}
+.lightTheme .home-banner .type-box .lead {
+  color: inherit;
+}
+.lightTheme .px-btn, .lightTheme .px-btn-theme {
+  box-shadow: 4px 4px #0b0b13;
+}
+.lightTheme .about-text h3, .lightTheme .about-text .h3 {
+  color: #0b0b13;
+}
+.lightTheme .media .count {
+  color: #0b0b13;
+  text-shadow: none;
+}
+.lightTheme .nav-menu li a {
+  color: #555;
+}
+.lightTheme .title h3, .lightTheme .title .h3 {
+  color: #000;
+  text-shadow: none;
+  font-weight: 300;
+}
+.lightTheme .education-box {
+  background: #f7f7ff;
+}
+.lightTheme .education-box h6, .lightTheme .education-box .h6 {
+  color: #0b0b13 !important;
+}
+.lightTheme .skills-box h3, .lightTheme .skills-box .h3 {
+  color: #0b0b13;
+}
+.lightTheme .skill-lt h6, .lightTheme .skill-lt .h6 {
+  color: #0b0b13 !important;
+  font-weight: 400;
+}
+.lightTheme .resume-row h6, .lightTheme .resume-row .h6 {
+  color: #0b0b13 !important;
+}
+.lightTheme .separator::after {
+  background: #0b0b13;
+}
+.lightTheme .resume-box {
+  background: #f7f7ff;
+}
+.lightTheme .resume-row {
+  border-bottom: 1px solid rgba(11, 11, 19, 0.05);
+}
+.lightTheme #services .feature-box-01 {
+  background: #f7f7ff;
+}
+.lightTheme #services .feature-box-01 h5, .lightTheme #services .feature-box-01 .h5 {
+  color: #0b0b13;
+}
+.lightTheme #services .feature-box-01 .icon span {
+  color: #0b0b13;
+}
+.lightTheme .testimonial-01 {
+  background: #f7f7ff;
+}
+.lightTheme .testimonial-01 .slide-description h6, .lightTheme .testimonial-01 .slide-description .h6 {
+  color: #0b0b13 !important;
+}
+.lightTheme .swiper-pagination-bullet {
+  opacity: 0.2;
+}
+.lightTheme .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #f7f7ff;
+}
+.lightTheme .portfolio-filter li {
+  color: #0b0b13;
+}
+.lightTheme #contacts .contact-info {
+  background: #f7f7ff;
+}
+.lightTheme #contacts .contact-info ul li {
+  font-size: 18px;
+  color: inherit;
+}
+.lightTheme #contacts .contact-info a {
+  font-size: 18px;
+  color: inherit;
+}
+.lightTheme #contacts .contact-form {
+  background: #f7f7ff;
+}
+.lightTheme #contacts .contact-form h4, .lightTheme #contacts .contact-form .h4 {
+  color: #0b0b13;
+}
+.lightTheme #contacts .contact-form .form-control {
+  color: #0b0b13;
+  border: 1px solid rgba(11, 11, 19, 0.3);
+  background: #fff;
 }
 
 .mob-header {
@@ -12275,6 +12385,10 @@ h5, .h5 {
   overflow: hidden;
   position: relative;
 }
+.home-banner .container {
+  position: relative;
+  z-index: 1;
+}
 .home-banner .full-screen {
   min-height: 100vh;
   padding-top: 100px;
@@ -12317,7 +12431,6 @@ h5, .h5 {
   height: 100vh;
   border-radius: 50%;
   background: #0b0b13;
-  z-index: -1;
 }
 
 @keyframes blink {
@@ -12449,6 +12562,7 @@ span h6, span .h6 {
   margin-left: -24px;
   position: relative;
   margin-bottom: 9px;
+  color: #fff;
 }
 .education-box span::after {
   content: "";
@@ -12499,6 +12613,14 @@ span h6, span .h6 {
 .resume-row {
   padding: 35px;
 }
+@media (max-width: 991px) {
+  .resume-row {
+    padding: 20px;
+  }
+}
+.resume-row + .resume-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
 .resume-row label {
   font-size: 14px;
   margin-bottom: 12px;
@@ -12520,11 +12642,6 @@ span h6, span .h6 {
 .resume-row h6, .resume-row .h6 {
   font-weight: 500;
   font-size: 20px;
-}
-@media (max-width: 991px) {
-  .resume-row {
-    padding: 20px;
-  }
 }
 
 .resume-box {
@@ -14232,7 +14349,6 @@ you can use the generic selector below, but it's slower:
 }
 
 .slide-description p {
-  opacity: 0.75;
   letter-spacing: -1px;
 }
 

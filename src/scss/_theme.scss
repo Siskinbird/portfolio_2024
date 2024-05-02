@@ -2,8 +2,7 @@
   position: fixed;
   top: 25px;
   right: 25px;
-  background: inherit;
-  z-index: 33333;
+  z-index: 3;
   @include down-lg {
     right: 75px;
   }
@@ -59,9 +58,10 @@
 
 
 .lightTheme {
-  background: #FFFFFF;
+  background: $white;
+  color: #555;
   .mob-header {
-    background-color:#FFFFFF;
+    background-color: $white;
   .logo-text {
     color: $px-bg-1;
     text-shadow: none;
@@ -70,4 +70,125 @@
 .slider {
   background-color: $px-theme;
 }
+.pp-section {
+  background: $white;
+}
+.home-banner::after{
+  background: $px-gray;
+  z-index: 0;
+}
+.header-left {
+  background: $px-gray;
+}
+.home-banner{
+  .type-box h5{
+    color: $px-black;
+  }
+  .font-alt{
+    text-shadow: none;
+    color: $px-black;
+  }
+  .type-box .lead{
+    color: inherit;
+  }
+}
+.px-btn, .px-btn-theme {
+  box-shadow: 4px 4px $px-dark;
+}
+.about-text h3{
+  color: $px-dark;
+}
+.media .count {
+  color: $px-dark;
+  text-shadow: none;
+}
+.nav-menu li a {
+  color: $px-body-light;
+}
+.title h3 {
+  color: $px-black;
+  text-shadow: none;
+  font-weight: 300;
+}
+.education-box {
+  background: $px-gray;
+  h6 {
+    color: $px-dark !important;
+  }
+}
+.skills-box h3 {
+  color: $px-dark;
+}
+.skill-lt h6 {
+  color: $px-dark !important;
+  font-weight: 400;
+}
+.resume-row h6 {
+  color: $px-dark !important;
+}
+.separator::after {
+  background: $px-dark;
+}
+.resume-box {
+  background: $px-gray;
+}
+.resume-row {
+  border-bottom: 1px solid rgba($px-dark, 0.05);
+}
+#services {
+  .feature-box-01 {
+    background: $px-gray;
+    h5 {
+      color: $px-dark;
+    }
+    .icon span {
+      color: $px-dark;
+    }
+  }
+}
+
+.testimonial-01 {
+  background: $px-gray;
+  .slide-description h6{
+    color: $px-dark !important;
+  }
+}
+.swiper-pagination-bullet{
+    opacity: 0.2;
+  &-active {
+    opacity: 1;
+    background: $px-gray;
+}
+}
+.portfolio-filter li {
+  color: $px-dark;
+}
+
+#contacts {
+  .contact-info{
+    background: $px-gray;
+    ul li {
+      font-size: 18px;
+      color: inherit;
+    }
+    a {
+      font-size: 18px;
+      color: inherit;
+    }
+  }
+
+  .contact-form {
+    background: $px-gray;
+    
+    h4 {
+      color: $px-dark;
+    }
+    .form-control {
+      color: #0b0b13;
+      border: 1px solid rgba(11, 11, 19, 0.3);
+      background: #fff;
+  }
+  }
+}
+
 }

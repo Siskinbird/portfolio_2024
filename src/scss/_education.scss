@@ -22,6 +22,7 @@ span h6 {
     margin-left: -24px;
     position: relative;
     margin-bottom: 9px;
+    color: $white;
     &::after {
       content: "";
       position: absolute;
@@ -34,8 +35,6 @@ span h6 {
 }
 .skill-lt{
   position: relative;
-  //background: rgba(255, 255, 255, 0.2);
-  //width: 80px;
   &:not(:first-child) {
     margin-top: 25px;
   }

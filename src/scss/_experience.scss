@@ -1,5 +1,11 @@
 .resume-row {
   padding: 35px;
+    @include down-md {
+    padding: 20px;
+  }
+  + .resume-row {
+		border-bottom: 1px solid rgba($white, 0.05);
+  }
   label {
     font-size: 14px;
     margin-bottom: 12px;
@@ -18,19 +24,13 @@
     font-weight: 500;
     font-size: 20px;
   }
-  @include down-md {
-    padding: 20px;
-  }
 }
-
 
 .resume-box {
   vertical-align: top;
   width: 100%;
   margin-top: 15px;
 }
-
-
  .rb-left {
   min-height: 100%;
   text-align: center;
