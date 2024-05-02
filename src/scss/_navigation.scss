@@ -8,11 +8,9 @@
 
 
 .nav-menu {
-  //padding-top: 45px;
-  //padding-bottom: 45px;
   li {
     transition: .3s ease-in-out;
-    padding: 12px 8px;
+    padding: 6px 8px;
     .link {
       margin-right: 10px;
     }
@@ -20,7 +18,8 @@
     a {
       text-decoration: none;
       color: $white;
-      font-weight: 400;
+      font-weight: 500;
+      font-size: 14px;
       transition: .3s ease-in-out;
       &:hover {
         color: $px-theme;

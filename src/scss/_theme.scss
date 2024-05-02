@@ -2,7 +2,7 @@
   position: fixed;
   top: 25px;
   right: 25px;
-  z-index: 3;
+  z-index: 333;
   @include down-lg {
     right: 75px;
   }
@@ -60,6 +60,7 @@
 .lightTheme {
   background: $white;
   color: #555;
+  transition: all .5s ease-in-out;
   .mob-header {
     background-color: $white;
   .logo-text {

@@ -12049,7 +12049,7 @@ textarea.form-control-lg {
   position: fixed;
   top: 25px;
   right: 25px;
-  z-index: 3;
+  z-index: 333;
 }
 @media (max-width: 1200px) {
   .grid {
@@ -12116,6 +12116,7 @@ textarea.form-control-lg {
 .lightTheme {
   background: #fff;
   color: #555;
+  transition: all 0.5s ease-in-out;
 }
 .lightTheme .mob-header {
   background-color: #fff;
@@ -12452,7 +12453,7 @@ h5, .h5 {
 
 .nav-menu li {
   transition: 0.3s ease-in-out;
-  padding: 12px 8px;
+  padding: 6px 8px;
 }
 .nav-menu li .link {
   margin-right: 10px;
@@ -12460,7 +12461,8 @@ h5, .h5 {
 .nav-menu li a {
   text-decoration: none;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 14px;
   transition: 0.3s ease-in-out;
 }
 .nav-menu li a:hover {
@@ -14617,6 +14619,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
+  transition: all 0.5s ease-in-out;
 }
 
 .section {

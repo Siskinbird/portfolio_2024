@@ -2,9 +2,7 @@
 @import './node_modules/bootstrap/scss/bootstrap.scss';
 @import './variables.scss';
 @import './button.scss';
-// @import './color.scss';
 @import './media_mixin';
-// @import './navbar.scss';
 @import './theme.scss';
 @import './mob-header.scss';
 @import './header-left.scss';
@@ -29,22 +27,8 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
-  //color: $white;
+  transition: all .5s ease-in-out;
 }
-
-// body {
-//   color: $px-body;
-//   font-family: $px-font;
-//   line-height: $px-line-height;
-//   font-size: $px-font-size;
-//   font-weight: 300;
-//   &.theme-light {
-//     background: $white;
-//     color: $px-body-light;
-//     font-weight: 400;
-//   }
-// }
-
 
 
 .section {
