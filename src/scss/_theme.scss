@@ -135,6 +135,7 @@
 }
 .resume-row {
   border-bottom: 1px solid rgba($px-dark, 0.05);
+  background: $px-gray;
 }
 #services {
   .feature-box-01 {
@@ -155,7 +156,7 @@
   }
 }
 .swiper-pagination-bullet{
-    opacity: 0.2;
+    opacity: 0.5;
   &-active {
     opacity: 1;
     background: $px-gray;

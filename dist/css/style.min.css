@@ -12033,7 +12033,7 @@ textarea.form-control-lg {
   box-shadow: 4px 4px #fff;
 }
 .theme-light .px-btn.px-btn-theme {
-  box-shadow: 4px 4px #0b0b13;
+  box-shadow: 4px 4px #333342;
 }
 .px-btn.px-btn-theme:hover {
   background: #fff;
@@ -12041,7 +12041,7 @@ textarea.form-control-lg {
   box-shadow: 4px 4px #2fbf71;
 }
 .theme-light .px-btn.px-btn-theme:hover {
-  background: #0b0b13;
+  background: #333342;
   color: #fff;
 }
 
@@ -12122,7 +12122,7 @@ textarea.form-control-lg {
   background-color: #fff;
 }
 .lightTheme .mob-header .logo-text {
-  color: #10101a;
+  color: #38384e;
   text-shadow: none;
 }
 .lightTheme .slider {
@@ -12149,13 +12149,13 @@ textarea.form-control-lg {
   color: inherit;
 }
 .lightTheme .px-btn, .lightTheme .px-btn-theme {
-  box-shadow: 4px 4px #0b0b13;
+  box-shadow: 4px 4px #333342;
 }
 .lightTheme .about-text h3, .lightTheme .about-text .h3 {
-  color: #0b0b13;
+  color: #333342;
 }
 .lightTheme .media .count {
-  color: #0b0b13;
+  color: #333342;
   text-shadow: none;
 }
 .lightTheme .nav-menu li a {
@@ -12170,51 +12170,52 @@ textarea.form-control-lg {
   background: #f7f7ff;
 }
 .lightTheme .education-box h6, .lightTheme .education-box .h6 {
-  color: #0b0b13 !important;
+  color: #333342 !important;
 }
 .lightTheme .skills-box h3, .lightTheme .skills-box .h3 {
-  color: #0b0b13;
+  color: #333342;
 }
 .lightTheme .skill-lt h6, .lightTheme .skill-lt .h6 {
-  color: #0b0b13 !important;
+  color: #333342 !important;
   font-weight: 400;
 }
 .lightTheme .resume-row h6, .lightTheme .resume-row .h6 {
-  color: #0b0b13 !important;
+  color: #333342 !important;
 }
 .lightTheme .separator::after {
-  background: #0b0b13;
+  background: #333342;
 }
 .lightTheme .resume-box {
   background: #f7f7ff;
 }
 .lightTheme .resume-row {
-  border-bottom: 1px solid rgba(11, 11, 19, 0.05);
+  border-bottom: 1px solid rgba(51, 51, 66, 0.05);
+  background: #f7f7ff;
 }
 .lightTheme #services .feature-box-01 {
   background: #f7f7ff;
 }
 .lightTheme #services .feature-box-01 h5, .lightTheme #services .feature-box-01 .h5 {
-  color: #0b0b13;
+  color: #333342;
 }
 .lightTheme #services .feature-box-01 .icon span {
-  color: #0b0b13;
+  color: #333342;
 }
 .lightTheme .testimonial-01 {
   background: #f7f7ff;
 }
 .lightTheme .testimonial-01 .slide-description h6, .lightTheme .testimonial-01 .slide-description .h6 {
-  color: #0b0b13 !important;
+  color: #333342 !important;
 }
 .lightTheme .swiper-pagination-bullet {
-  opacity: 0.2;
+  opacity: 0.5;
 }
 .lightTheme .swiper-pagination-bullet-active {
   opacity: 1;
   background: #f7f7ff;
 }
 .lightTheme .portfolio-filter li {
-  color: #0b0b13;
+  color: #333342;
 }
 .lightTheme #contacts .contact-info {
   background: #f7f7ff;
@@ -12231,7 +12232,7 @@ textarea.form-control-lg {
   background: #f7f7ff;
 }
 .lightTheme #contacts .contact-form h4, .lightTheme #contacts .contact-form .h4 {
-  color: #0b0b13;
+  color: #333342;
 }
 .lightTheme #contacts .contact-form .form-control {
   color: #0b0b13;
@@ -12246,7 +12247,7 @@ textarea.form-control-lg {
   top: 0;
   width: 100%;
   z-index: 11;
-  background: #10101a;
+  background: #38384e;
 }
 .theme-light .mob-header {
   background: #fff;
@@ -12273,7 +12274,7 @@ textarea.form-control-lg {
   position: fixed;
   bottom: 0;
   top: 0;
-  background: #0c0c14;
+  background: #333342;
   transition: 0.3s ease-in-out;
 }
 .header-left .scroll-bar {
@@ -12325,31 +12326,54 @@ textarea.form-control-lg {
   }
 }
 
-.toggle-menu {
-  width: 40px;
-  height: 40px;
+/**----------------------------------BURGER---------------------*/
+.burger {
   position: relative;
-  background: #2fbf71;
-  border: 0;
-  margin-left: auto;
-  box-shadow: 2px 2px 2px #ec0569;
+  width: 38px;
+  height: 34px;
+  border: 2px solid #2fbf71;
+  padding: 5px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  opacity: 0.7;
+  transition: opacity 0.15s ease-out, transform 0.15s cubic-bezier(0, 0, 0.3, 2.5);
+  /* open state */
 }
-.toggle-menu span {
+.burger:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.burger:active {
+  transform: scale(0.8, 0.8);
+  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+}
+.burger .stripe {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 25px;
-  height: 2px;
-  margin: auto;
-  box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
-  background: #fff;
-  color: #fff;
+  width: 24px;
+  height: 4px;
+  background-color: #2fbf71;
+  margin-bottom: 4px;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out, background-color 0.2s ease-out;
+  border-radius: 1px;
 }
-.toggle-menu button:active,
-.toggle-menu button:focus {
-  border: none;
+.burger .stripe.top {
+  top: 5px;
+}
+.burger .stripe.center1, .burger .stripe.center2 {
+  top: 13px;
+}
+.burger .stripe.bottom {
+  top: 21px;
+}
+.burger.open .top, .burger.open .bottom {
+  transform: scaleX(0);
+  opacity: 0;
+}
+.burger.open .center1 {
+  transform: rotate(-45deg);
+}
+.burger.open .center2 {
+  transform: rotate(45deg);
 }
 
 @media (min-width: 1201px) {
@@ -12431,7 +12455,7 @@ h5, .h5 {
   width: 100vh;
   height: 100vh;
   border-radius: 50%;
-  background: #0b0b13;
+  background: #333342;
 }
 
 @keyframes blink {
@@ -12454,6 +12478,7 @@ h5, .h5 {
 .nav-menu li {
   transition: 0.3s ease-in-out;
   padding: 6px 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
 .nav-menu li .link {
   margin-right: 10px;
@@ -12542,7 +12567,7 @@ span h6, span .h6 {
 }
 
 .education-box {
-  background: #0b0b13;
+  background: #333342;
   list-style: none;
 }
 @media (min-width: 768px) {
@@ -12614,6 +12639,8 @@ span h6, span .h6 {
 
 .resume-row {
   padding: 35px;
+  background: #333342;
+  margin: 2px;
 }
 @media (max-width: 991px) {
   .resume-row {
@@ -12695,8 +12722,8 @@ span h6, span .h6 {
 .feature-box-01 {
   overflow: hidden;
   z-index: 1;
-  background: #0b0b13;
-  transition: ease background 0.35s;
+  background: #333342;
+  transition: ease 0.3s;
 }
 .feature-box-01:hover {
   background: #2fbf71;
@@ -14375,7 +14402,7 @@ you can use the generic selector below, but it's slower:
   width: 10px;
   height: 10px;
   background: transparent;
-  border: 1px solid #414141;
+  border: 1px solid #333342;
   transition: ease all 0.55s;
   border-radius: 50%;
   margin: 0 5px;
@@ -14394,7 +14421,7 @@ you can use the generic selector below, but it's slower:
 }
 
 .testimonial-01 {
-  background: #0b0b13;
+  background: #333342;
   padding: 35px;
   overflow: hidden;
   margin-top: 15px;
@@ -14506,7 +14533,7 @@ swiper-button-prev {
 }
 
 .portfolio-box {
-  background: #0b0b13;
+  background: #333342;
   position: relative;
   transition: 0.5s ease-in-out;
 }
@@ -14543,7 +14570,7 @@ swiper-button-prev {
   left: 20px;
   padding: 20px;
   z-index: 1;
-  background: #10101a;
+  background: #38384e;
   right: 20px;
   text-align: center;
   opacity: 0;
@@ -14559,7 +14586,7 @@ swiper-button-prev {
 }
 
 .contact-info {
-  background: #0b0b13;
+  background: #333342;
   padding: 30px;
 }
 .contact-info li {
@@ -14585,7 +14612,7 @@ swiper-button-prev {
 }
 
 .contact-form {
-  background: #0b0b13;
+  background: #333342;
   padding: 30px;
 }
 .contact-form h4, .contact-form .h4 {
@@ -14615,7 +14642,7 @@ swiper-button-prev {
 body {
   font-family: "Rubik", monospac, sans-serif;
   color: rgba(255, 255, 255, 0.8);
-  background: #10101a;
+  background: #38384e;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
@@ -14664,5 +14691,5 @@ h6, .h6 {
 }
 
 .pp-section {
-  background: #10101a;
+  background: #38384e;
 }

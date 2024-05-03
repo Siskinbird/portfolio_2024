@@ -20,11 +20,16 @@ export const isWebp = () => {
   });
 }
 
+/**================================================================================*/
+/**--------------------------------BURGER ANIMATION--------------------------------*/
+/**================================================================================*/
+
 /**Left header open/close */
 export const menuToggle = () => {
   $(function () {
-    $('.toggle-menu').on('click', function (e) {
+    $('.burger').on('click', function (e) {
       $('.header-left').toggleClass('menu-open');
+      $('.burger').toggleClass('open');
       e.stopPropagation();
       return false;
     });

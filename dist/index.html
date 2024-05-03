@@ -12,16 +12,17 @@
 </head>
 <body id="body">
   <div class="mob-header">
-  <div class="d-flex align-items-center w-100">
+  <div class="d-flex align-items-center justify-content-between w-100">
     <div class="navbar-brand d-inline-block">
       <a class="logo-text" href="/">DmiCh</a>
     </div>
-    <!-- Burger menu mobile -->
-<button onclick="menuToggle()" id="toggle-menu" class="toggle-menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+    <!-- New burger -->
+<div class="burger" onclick="menuToggle()">
+  <div class="stripe top"></div>
+  <div class="stripe center1"></div>
+  <div class="stripe center2"></div>
+  <div class="stripe bottom"></div>
+</div>
   </div>
 </div>
   <header id="header-left" class="header-left">
@@ -93,6 +94,7 @@
         </div>
     </div>
 </section>
+
     <section id="about" class="about pp-section pp-scrollable section container" data-nav-tooltip="About">
     <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -255,6 +257,26 @@
                 <div class="rb-right">
                     <h6>Начальник It-отдела</h6>
                     <label>ООО "Метаформ" | Офис | Февраль 2023 - сейчас</label>
+                    <div class="rb-time">Полная занятость</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resume-row">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-xl-2">
+                <div class="rb-left">
+                    <img src="img/logo.jpg" alt="Логотип Чижова Дмитрий">
+                </div>
+            </div>
+            <div class="col-sm-9 col-md-9 col-xl-10 position-relative">
+                <div class="rb-right">
+                    <h6>Front-end Developer</h6>
+                    <label>Фриланс | Удалёнка | Январь 2021 - сейчас</label>
                     <div class="rb-time">Полная занятость</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

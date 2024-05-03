@@ -68,7 +68,7 @@
   width: 10px;
   height: 10px;
   background: transparent;
-  border: 1px solid #414141;
+  border: 1px solid $px-dark;
   transition: ease all 0.55s;
   border-radius: 50%;
   margin: 0 5px;
@@ -84,35 +84,8 @@
 }
 
 
-
-
-
-
-//.swiper {
-//  width: 100%;
-//  height: 100%;
-//}
-//
-//.swiper-slide {
-//  text-align: center;
-//  font-size: 18px;
-//  background: #fff;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//  color: black;
-//}
-//
-//.swiper-slide img {
-//  display: block;
-//  width: 100%;
-//  height: 100%;
-//  object-fit: cover;
-//}
-
-
 .testimonial-01 {
-  background: #0b0b13;
+  background: $px-dark;
   padding: 35px;
   overflow: hidden;
   margin-top: 15px;
@@ -129,81 +102,3 @@
   padding: 0;
   z-index: 1;
 }
-//.swiper-wrapper{
-//  position: relative;
-//  width: 100%;
-//  height: 100%;
-//  z-index: 1;
-//  display: flex;
-//  transition-property: transform;
-//  box-sizing: content-box;
-//}
-//
-//.swiper-slide {
-//  flex-shrink: 0;
-//  width: 50%;
-//  height: 100%;
-//  position: relative;
-//  transition-property: transform;
-//  margin: 15px 25px 25px 0;
-//}
-//@media (max-width: 768px) {
-//  .avatar {
-//    width: 50px;
-//    height: 50px;
-//
-//  }
-//}
-//
-//.avatar {
-//  max-width: 100%;
-//  height: 100px;
-//  overflow: hidden;
-//}
-////.slide-image img {
-////  width: 100%;
-////  height: 100%;
-////  border-radius: 50%;
-////  object-fit: cover;
-////}
-//
-//.slide-description {
-//  flex: 1;
-//  padding-left: 25px;
-//}
-//.slide-description p {
-//  opacity: 0.75;
-//  letter-spacing: -1px;
-//}
-//.slide-description h6 {
-//  margin: 10px 0;
-//  font-weight: 600;
-//  font-size: 18px;
-//}
-//
-//.swiper-pagination {
-//  margin-top: 30px;
-//  position: relative;
-//}
-//
-//.swiper-pagination-bullet {
-//  text-align: center;
-//  display: inline-block;
-//  vertical-align: top;
-//  width: 10px;
-//  height: 10px;
-//  background: transparent;
-//  border: 1px solid #ffffff;
-//  transition: ease all 0.55s;
-//  border-radius: 50%;
-//  margin: 0 5px;
-//}
-//.theme-light .swiper-pagination-bullet {
-//  border-color: #333342;
-//}
-//.swiper-pagination-bullet-active {
-//  background: #ffffff;
-//}
-//.theme-light .swiper-pagination-bullet-active {
-//  background: #333342;
-//}

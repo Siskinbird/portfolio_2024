@@ -1,28 +1,87 @@
 @import './variables';
 
-.toggle-menu {
-  width: 40px;
-  height: 40px;
+// .toggle-menu {
+//   width: 40px;
+//   height: 40px;
+//   position: relative;
+//   background: $px-theme;
+//   border: 0;
+//   margin-left: auto;
+//   box-shadow: 2px 2px 2px $text-shadow;
+//   span {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     width: 25px;
+//     height: 2px;
+//     margin: auto;
+//     box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
+//     background: $white;
+//     color: $white;
+//   }
+//   button:active,
+//   button:focus  {
+//     border:none;
+//   }
+// }
+/**----------------------------------BURGER---------------------*/
+
+.burger {
   position: relative;
-  background: $px-theme;
-  border: 0;
-  margin-left: auto;
-  box-shadow: 2px 2px 2px $text-shadow;
-  span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 25px;
-    height: 2px;
-    margin: auto;
-    box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
-    background: $white;
-    color: $white;
+  width: 38px;
+  height: 34px;
+  border: 2px solid $px-theme;
+  padding: 5px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  opacity: 0.7;
+  transition: opacity .15s ease-out,
+  transform .15s cubic-bezier(0,0,.3,2.5);
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
   }
-  button:active,
-  button:focus  {
-    border:none;
+  &:active {
+    transform: scale(0.8,0.8);
+    transition: opacity .15s ease-out,
+    transform .15s ease-out;
+  }
+
+  .stripe {
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background-color: $px-theme;
+    margin-bottom: 4px;
+    transition: transform .2s ease-out,
+    opacity .2s ease-out,
+    background-color .2s ease-out;
+    border-radius: 1px;
+
+    &.top {
+      top: 5px;
+    }
+
+    &.center1, &.center2 {
+      top: 13px;
+    }
+    &.bottom {
+      top: 21px;
+    }
+  }
+  /* open state */
+  &.open {
+    .top, .bottom {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    .center1 {
+      transform: rotate(-45deg);
+    }
+    .center2 {
+      transform: rotate(45deg);
+    }
   }
 }
