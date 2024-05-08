@@ -1,0 +1,62 @@
+%icon-standard {
+  width: 24px;
+  height: 24px;
+  //display: inline-block;
+  display: flex;
+  vertical-align: middle;
+  margin: 0;
+  mask-position: center;
+  z-index: 55;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all .3s ease-in-out;
+  &:hover {
+    background-color: #5AB159;
+  }
+}
+
+.v-icon {
+  &-telegram {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/Telegram.svg");
+    -webkit-mask-image: url("../img/socials/Telegram.svg");
+  }
+  &-git {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/GitHub.svg");
+    -webkit-mask-image: url("../img/socials/GitHub.svg");
+  }
+  &-youtube {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/youtube.svg");
+    -webkit-mask-image: url("../img/socials/youtube.svg");
+  }
+  &-linkedin {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/LinkedIn.svg");
+    -webkit-mask-image: url("../img/socials/LinkedIn.svg");
+  }
+  &-instagram {
+    @extend %icon-standard;
+    mask-image: url("../img/socials/Instagram.svg");
+    -webkit-mask-image: url("../img/socials/Instagram.svg");
+  }
+}
+
+.check{
+  padding: 2px;
+  margin: 4px;
+  width: 26px;
+  height: 26px;
+  fill: white;
+  transition: .3s all ease-in-out;
+  border-radius: 12px;
+  &:hover{
+    fill: $px-theme;
+  }
+ 
+}
