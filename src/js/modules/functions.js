@@ -26,6 +26,7 @@ export const isWebp = () => {
 
 /**Left header open/close */
 export const menuToggle = () => {
+  
   $(function () {
     $('.burger').on('click', function (e) {
       $('.header-left').toggleClass('menu-open');
