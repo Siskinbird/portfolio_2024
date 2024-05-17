@@ -3,12 +3,30 @@
 @@include('html/head.html', {
   "title": "D.Chizhov"
 })
-<body id="body">
-  @@include('html/mob-header.html',{})
+<body id="body" class="body">
+  @@include('html/preloader.html',{})
+  <div class="wrapper flex-column" id="wrapper" style="display: none">
+      @@include('html/mob-header.html',{})
   @@include('html/header-left.html',{})
-@@include('html/sidebar.html',{})
+  @@include('html/sidebar.html',{})
   @@include('html/main.html',{})
   @@include('html/footer.html',{})
+  </div>
+
   <script src="js/app.min.js"></script>
+  <script>
+    window.addEventListener('load',
+     setTimeout(function() {
+    let preloader = document.getElementById("preloader");
+    let wrapper = document.getElementById('wrapper')
+    preloader.style.opacity = 0;
+    setTimeout(function() {
+        preloader.style.display = "none";
+        wrapper.style.display = "block";
+        wrapper.style.opacity = 1;
+    }, 1000);
+}, 3000));
+  </script>
+  @@include('html/yametrika.html',{})
 </body>
 </html>

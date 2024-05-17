@@ -1,5 +1,6 @@
 @import 'fonts';
 @import './node_modules/bootstrap/scss/bootstrap.scss';
+@import './preloader';
 @import './variables.scss';
 @import './button.scss';
 @import './media_mixin';
@@ -31,6 +32,11 @@ body {
   transition: all .5s ease-in-out;
 }
 
+#wrapper {
+  display: none;
+  transition: opacity 1s ease-in;
+  overflow: hidden;
+}
 
 .section {
   padding: 100px 0;
